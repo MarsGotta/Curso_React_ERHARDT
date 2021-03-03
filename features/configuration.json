@@ -1,0 +1,16 @@
+{
+	"$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
+	"system": {
+		"category": "my-project",
+		"name": "my-project"
+	},
+	"portletInstance": {
+		"fields": { 
+			"structureId": {
+				"type": "number",
+				"name": "structureId",
+				"default": 0
+			}
+		} 
+	}
+}

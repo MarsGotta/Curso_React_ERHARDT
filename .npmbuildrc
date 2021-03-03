@@ -1,0 +1,13 @@
+{
+	"translatorTextKey": "",
+	"supportedLocales": [],
+	"liferayDir": "C:\\Liferays\\lfr-7.3.5-ga6",
+	"webpack": {
+		"rules": [
+			{
+				"test": "src\\\\.*\\.js$",
+				"use": "babel-loader"
+			}
+		]
+	}
+}

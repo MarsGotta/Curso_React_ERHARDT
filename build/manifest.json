@@ -1,0 +1,887 @@
+{
+  "packages": {
+    "/": {
+      "dest": {
+        "dir": "./build",
+        "id": "/",
+        "name": "my-project",
+        "version": "1.0.0"
+      },
+      "modules": {
+        "App.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "AppComponent.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "DetalleLibro.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "Libro.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "Libros.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "Perfil.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "index.js": {
+          "flags": {
+            "esModule": true
+          }
+        }
+      },
+      "src": {
+        "dir": ".",
+        "id": "/",
+        "name": "my-project",
+        "version": "1.0.0"
+      }
+    },
+    "@babel/runtime@7.13.9": {
+      "dest": {
+        "dir": "./build/node_modules/@my-project$babel%2Fruntime@7.13.9",
+        "id": "@my-project$babel/runtime@7.13.9",
+        "name": "@my-project$babel/runtime",
+        "version": "7.13.9"
+      },
+      "modules": {
+        "helpers/AsyncGenerator.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/AwaitValue.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/applyDecoratedDescriptor.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/arrayLikeToArray.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/arrayWithHoles.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/arrayWithoutHoles.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/assertThisInitialized.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/asyncGeneratorDelegate.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/asyncIterator.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/asyncToGenerator.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/awaitAsyncGenerator.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classCallCheck.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classNameTDZError.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classPrivateFieldDestructureSet.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classPrivateFieldGet.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classPrivateFieldLooseBase.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classPrivateFieldLooseKey.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classPrivateFieldSet.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classPrivateMethodGet.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classPrivateMethodSet.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classStaticPrivateFieldSpecGet.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classStaticPrivateFieldSpecSet.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classStaticPrivateMethodGet.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/classStaticPrivateMethodSet.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/construct.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/createClass.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/createForOfIteratorHelper.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/createForOfIteratorHelperLoose.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/createSuper.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/decorate.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/defaults.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/defineEnumerableProperties.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/defineProperty.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/esm/interopRequireDefault.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/esm/interopRequireWildcard.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/extends.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/get.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/getPrototypeOf.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/inherits.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/inheritsLoose.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/initializerDefineProperty.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/initializerWarningHelper.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/instanceof.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/interopRequireDefault.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/interopRequireWildcard.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/isNativeFunction.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/isNativeReflectConstruct.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/iterableToArray.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/iterableToArrayLimit.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/iterableToArrayLimitLoose.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/jsx.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/maybeArrayLike.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/newArrowCheck.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/nonIterableRest.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/nonIterableSpread.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/objectDestructuringEmpty.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/objectSpread.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/objectSpread2.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/objectWithoutProperties.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/objectWithoutPropertiesLoose.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/possibleConstructorReturn.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/readOnlyError.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/set.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/setPrototypeOf.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/skipFirstGeneratorNext.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/slicedToArray.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/slicedToArrayLoose.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/superPropBase.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/taggedTemplateLiteral.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/taggedTemplateLiteralLoose.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/tdz.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/temporalRef.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/temporalUndefined.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/toArray.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/toConsumableArray.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/toPrimitive.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/toPropertyKey.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/typeof.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/unsupportedIterableToArray.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/wrapAsyncGenerator.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/wrapNativeSuper.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/wrapRegExp.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "helpers/writeOnlyError.js": {
+          "flags": {
+            "esModule": true
+          }
+        }
+      },
+      "src": {
+        "dir": "./node_modules/@babel/runtime",
+        "id": "@babel/runtime@7.13.9",
+        "name": "@babel/runtime",
+        "version": "7.13.9"
+      }
+    },
+    "history@4.10.1": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$history@4.10.1",
+        "id": "my-project$history@4.10.1",
+        "name": "my-project$history",
+        "version": "4.10.1"
+      },
+      "modules": {
+        "cjs/history.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "cjs/history.min.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "umd/history.js": {
+          "flags": {
+            "esModule": true
+          }
+        }
+      },
+      "src": {
+        "dir": "./node_modules/history",
+        "id": "history@4.10.1",
+        "name": "history",
+        "version": "4.10.1"
+      }
+    },
+    "hoist-non-react-statics@3.3.2": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$hoist-non-react-statics@3.3.2",
+        "id": "my-project$hoist-non-react-statics@3.3.2",
+        "name": "my-project$hoist-non-react-statics",
+        "version": "3.3.2"
+      },
+      "modules": {
+        "dist/hoist-non-react-statics.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "dist/hoist-non-react-statics.min.js": {
+          "flags": {
+            "esModule": true
+          }
+        }
+      },
+      "src": {
+        "dir": "./node_modules/hoist-non-react-statics",
+        "id": "hoist-non-react-statics@3.3.2",
+        "name": "hoist-non-react-statics",
+        "version": "3.3.2"
+      }
+    },
+    "isarray@0.0.1": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$isarray@0.0.1",
+        "id": "my-project$isarray@0.0.1",
+        "name": "my-project$isarray",
+        "version": "0.0.1"
+      },
+      "src": {
+        "dir": "./node_modules/react-router/node_modules/isarray",
+        "id": "isarray@0.0.1",
+        "name": "isarray",
+        "version": "0.0.1"
+      }
+    },
+    "js-tokens@4.0.0": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$js-tokens@4.0.0",
+        "id": "my-project$js-tokens@4.0.0",
+        "name": "my-project$js-tokens",
+        "version": "4.0.0"
+      },
+      "modules": {
+        "index.js": {
+          "flags": {
+            "esModule": true
+          }
+        }
+      },
+      "src": {
+        "dir": "./node_modules/js-tokens",
+        "id": "js-tokens@4.0.0",
+        "name": "js-tokens",
+        "version": "4.0.0"
+      }
+    },
+    "loose-envify@1.4.0": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$loose-envify@1.4.0",
+        "id": "my-project$loose-envify@1.4.0",
+        "name": "my-project$loose-envify",
+        "version": "1.4.0"
+      },
+      "src": {
+        "dir": "./node_modules/loose-envify",
+        "id": "loose-envify@1.4.0",
+        "name": "loose-envify",
+        "version": "1.4.0"
+      }
+    },
+    "mini-create-react-context@0.4.1": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$mini-create-react-context@0.4.1",
+        "id": "my-project$mini-create-react-context@0.4.1",
+        "name": "my-project$mini-create-react-context",
+        "version": "0.4.1"
+      },
+      "src": {
+        "dir": "./node_modules/mini-create-react-context",
+        "id": "mini-create-react-context@0.4.1",
+        "name": "mini-create-react-context",
+        "version": "0.4.1"
+      }
+    },
+    "object-assign@4.1.1": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$object-assign@4.1.1",
+        "id": "my-project$object-assign@4.1.1",
+        "name": "my-project$object-assign",
+        "version": "4.1.1"
+      },
+      "src": {
+        "dir": "./node_modules/object-assign",
+        "id": "object-assign@4.1.1",
+        "name": "object-assign",
+        "version": "4.1.1"
+      }
+    },
+    "path-to-regexp@1.8.0": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$path-to-regexp@1.8.0",
+        "id": "my-project$path-to-regexp@1.8.0",
+        "name": "my-project$path-to-regexp",
+        "version": "1.8.0"
+      },
+      "src": {
+        "dir": "./node_modules/react-router/node_modules/path-to-regexp",
+        "id": "path-to-regexp@1.8.0",
+        "name": "path-to-regexp",
+        "version": "1.8.0"
+      }
+    },
+    "prop-types@15.7.2": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$prop-types@15.7.2",
+        "id": "my-project$prop-types@15.7.2",
+        "name": "my-project$prop-types",
+        "version": "15.7.2"
+      },
+      "modules": {
+        "prop-types.js": {
+          "flags": {
+            "esModule": true
+          }
+        }
+      },
+      "src": {
+        "dir": "./node_modules/prop-types",
+        "id": "prop-types@15.7.2",
+        "name": "prop-types",
+        "version": "15.7.2"
+      }
+    },
+    "react-dom@16.8.6": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$react-dom@16.8.6",
+        "id": "my-project$react-dom@16.8.6",
+        "name": "my-project$react-dom",
+        "version": "16.8.6"
+      },
+      "src": {
+        "dir": "./node_modules/react-dom",
+        "id": "react-dom@16.8.6",
+        "name": "react-dom",
+        "version": "16.8.6"
+      }
+    },
+    "react-is@16.13.1": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$react-is@16.13.1",
+        "id": "my-project$react-is@16.13.1",
+        "name": "my-project$react-is",
+        "version": "16.13.1"
+      },
+      "src": {
+        "dir": "./node_modules/react-is",
+        "id": "react-is@16.13.1",
+        "name": "react-is",
+        "version": "16.13.1"
+      }
+    },
+    "react-router-dom@5.2.0": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$react-router-dom@5.2.0",
+        "id": "my-project$react-router-dom@5.2.0",
+        "name": "my-project$react-router-dom",
+        "version": "5.2.0"
+      },
+      "modules": {
+        "cjs/react-router-dom.min.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "umd/react-router-dom.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "umd/react-router-dom.min.js": {
+          "flags": {
+            "esModule": true
+          }
+        }
+      },
+      "src": {
+        "dir": "./node_modules/react-router-dom",
+        "id": "react-router-dom@5.2.0",
+        "name": "react-router-dom",
+        "version": "5.2.0"
+      }
+    },
+    "react-router@5.2.0": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$react-router@5.2.0",
+        "id": "my-project$react-router@5.2.0",
+        "name": "my-project$react-router",
+        "version": "5.2.0"
+      },
+      "modules": {
+        "cjs/react-router.min.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "umd/react-router.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "umd/react-router.min.js": {
+          "flags": {
+            "esModule": true
+          }
+        }
+      },
+      "src": {
+        "dir": "./node_modules/react-router",
+        "id": "react-router@5.2.0",
+        "name": "react-router",
+        "version": "5.2.0"
+      }
+    },
+    "react@16.8.6": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$react@16.8.6",
+        "id": "my-project$react@16.8.6",
+        "name": "my-project$react",
+        "version": "16.8.6"
+      },
+      "src": {
+        "dir": "./node_modules/react",
+        "id": "react@16.8.6",
+        "name": "react",
+        "version": "16.8.6"
+      }
+    },
+    "regenerator-runtime@0.13.7": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$regenerator-runtime@0.13.7",
+        "id": "my-project$regenerator-runtime@0.13.7",
+        "name": "my-project$regenerator-runtime",
+        "version": "0.13.7"
+      },
+      "src": {
+        "dir": "./node_modules/@babel/runtime/node_modules/regenerator-runtime",
+        "id": "regenerator-runtime@0.13.7",
+        "name": "regenerator-runtime",
+        "version": "0.13.7"
+      }
+    },
+    "resolve-pathname@3.0.0": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$resolve-pathname@3.0.0",
+        "id": "my-project$resolve-pathname@3.0.0",
+        "name": "my-project$resolve-pathname",
+        "version": "3.0.0"
+      },
+      "src": {
+        "dir": "./node_modules/resolve-pathname",
+        "id": "resolve-pathname@3.0.0",
+        "name": "resolve-pathname",
+        "version": "3.0.0"
+      }
+    },
+    "scheduler@0.13.6": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$scheduler@0.13.6",
+        "id": "my-project$scheduler@0.13.6",
+        "name": "my-project$scheduler",
+        "version": "0.13.6"
+      },
+      "modules": {
+        "cjs/scheduler-tracing.development.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "cjs/scheduler-tracing.production.min.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "cjs/scheduler-tracing.profiling.min.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "cjs/scheduler.development.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "cjs/scheduler.production.min.js": {
+          "flags": {
+            "esModule": true
+          }
+        }
+      },
+      "src": {
+        "dir": "./node_modules/scheduler",
+        "id": "scheduler@0.13.6",
+        "name": "scheduler",
+        "version": "0.13.6"
+      }
+    },
+    "tiny-invariant@1.1.0": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$tiny-invariant@1.1.0",
+        "id": "my-project$tiny-invariant@1.1.0",
+        "name": "my-project$tiny-invariant",
+        "version": "1.1.0"
+      },
+      "modules": {
+        "dist/tiny-invariant.cjs.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "dist/tiny-invariant.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "dist/tiny-invariant.min.js": {
+          "flags": {
+            "esModule": true
+          }
+        }
+      },
+      "src": {
+        "dir": "./node_modules/tiny-invariant",
+        "id": "tiny-invariant@1.1.0",
+        "name": "tiny-invariant",
+        "version": "1.1.0"
+      }
+    },
+    "tiny-warning@1.0.3": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$tiny-warning@1.0.3",
+        "id": "my-project$tiny-warning@1.0.3",
+        "name": "my-project$tiny-warning",
+        "version": "1.0.3"
+      },
+      "src": {
+        "dir": "./node_modules/tiny-warning",
+        "id": "tiny-warning@1.0.3",
+        "name": "tiny-warning",
+        "version": "1.0.3"
+      }
+    },
+    "value-equal@1.0.1": {
+      "dest": {
+        "dir": "./build/node_modules/my-project$value-equal@1.0.1",
+        "id": "my-project$value-equal@1.0.1",
+        "name": "my-project$value-equal",
+        "version": "1.0.1"
+      },
+      "src": {
+        "dir": "./node_modules/value-equal",
+        "id": "value-equal@1.0.1",
+        "name": "value-equal",
+        "version": "1.0.1"
+      }
+    }
+  }
+}
