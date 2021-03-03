@@ -7,7 +7,8 @@ function OwlHeader() {
     <header>
       <OwlIcon name="bar" />
       <OwlLogo />
-      <OwlIcon name="search" />
+      <div id="icono-search"><OwlIcon name="search"/></div>
+      
     </header>
   );
 }
