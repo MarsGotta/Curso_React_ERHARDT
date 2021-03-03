@@ -1,9 +1,9 @@
-import OwlHeader from '../componets/OwlHeader/OwlHeader';
+import AmazonHeader from '../componets/AmazonHeader/AmazonHeader';
 
 function Layout({children}) {
   return (
     <div className="Layout">
-      <OwlHeader />
+      <AmazonHeader />
       {children}
     </div>
   );

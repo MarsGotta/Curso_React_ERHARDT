@@ -1,8 +1,8 @@
 import * as IconCollection from './icon-collection'
-import './OwlIcon.css';
+import './AmazonIcon.css';
 
-function OwlIcon({name}) {
+function AmazonIcon({name}) {
   return IconCollection[name] ? IconCollection[name] : ''
 }
 
-export default OwlIcon;
+export default AmazonIcon;

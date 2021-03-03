@@ -1,10 +1,10 @@
 import './App.css';
-import OwlHeader from './componets/OwlHeader/OwlHeader';
+import AmazonHeader from './componets/AmazonHeader/AmazonHeader';
 
 function App() {
   return (
     <div className="App">
-      Owl book
+      
     </div>
   );
 }
