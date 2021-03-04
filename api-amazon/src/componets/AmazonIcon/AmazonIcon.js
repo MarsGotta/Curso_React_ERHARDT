@@ -1,7 +1,7 @@
 import * as IconCollection from './icon-collection'
 import './AmazonIcon.css';
 
-function AmazonIcon({name}) {
+function AmazonIcon({ name }) {
   return IconCollection[name] ? IconCollection[name] : ''
 }
 
