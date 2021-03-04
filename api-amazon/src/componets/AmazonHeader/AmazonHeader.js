@@ -2,6 +2,8 @@ import './AmazonHeader.css';
 import AmazonIcon from '../AmazonIcon/AmazonIcon'
 import AmazonLogo from '../AmazonLogo/AmazonLogo'
 import AmazonSearch from '../AmazonSearch/AmazonSearch';
+import AmazonSidebar from '../AmazonSidebar/AmazonSidebar';
+import { generos } from './mocks.js';
 
 function AmazonHeader() {
 
@@ -14,17 +16,22 @@ function AmazonHeader() {
   }
 
   return (
-    <div className="headerBar">
-      <div className="barLeft">
-        <AmazonIcon name="bar" />
-      </div>
+    <div>
+      <div className="headerBar">
+        <div className="barLeft">
+          <AmazonIcon name="bar" />
+        </div>
 
-      <div className="barCenter">
-        <AmazonLogo onClick={handleClickLogo} />
-      </div>
+        <div className="barCenter">
+          <AmazonLogo onClick={handleClickLogo} />
+        </div>
 
-      <div className="barRight">
-        <AmazonSearch onSubmit={handleSubmit} />
+        <div className="barRight">
+          <AmazonSearch onSubmit={handleSubmit} />
+        </div>
+      </div>   
+      <div>
+        <AmazonSidebar generos={generos} />
       </div>
     </div>
   );
