@@ -1,11 +1,15 @@
+import OwlTabList from './componets/OwlTabList/OwlTabList';
+import OwlLiteList from './componets/OwlLiteList/OwlLiteList';
+import { genreList, bookList } from './mocks';
 import './App.css';
-import OwlHeader from './componets/OwlHeader/OwlHeader';
 
 function App() {
   return (
-    <div className="App">
-   APPP
-    </div>
+    <main className="App">.
+      <h2>Grandes clásicos para ti</h2>
+      <OwlTabList genreList={genreList} bookList={bookList}/>
+      <OwlLiteList bookList={bookList} />
+    </main>
   );
 }
 
