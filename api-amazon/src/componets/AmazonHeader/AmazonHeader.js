@@ -9,6 +9,10 @@ function AmazonHeader() {
     console.log('ha hecho submit: ' + (evt.keyword != null ? evt.keyword : ''));
   }
 
+  const handleClickLogo = evt => {
+    console.log('ha hecho click en el logo');
+  }
+
   return (
     <div className="headerBar">
       <div className="barLeft">
@@ -16,7 +20,7 @@ function AmazonHeader() {
       </div>
 
       <div className="barCenter">
-        <AmazonLogo />
+        <AmazonLogo onClick={handleClickLogo} />
       </div>
 
       <div className="barRight">
