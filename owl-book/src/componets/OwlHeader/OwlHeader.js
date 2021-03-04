@@ -1,11 +1,10 @@
 import './OwlHeader.css';
 import OwlIcon from '../OwlIcon/OwlIcon'
 import OwlLogo from '../OwlLogo/OwlLogo'
-import OwlCard from '../OwlCard/OwlCard'
 
 function OwlHeader() {
   return (
-    <header>
+    <header className="OwlHeader">
       <OwlIcon name="bar" />
       <OwlLogo />
       <OwlIcon name="search" />

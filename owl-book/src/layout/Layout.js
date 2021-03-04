@@ -1,4 +1,3 @@
-import OwlCard from '../componets/OwlCard/OwlCard';
 import OwlHeader from '../componets/OwlHeader/OwlHeader';
 
 function Layout({children}) {
@@ -6,7 +5,6 @@ function Layout({children}) {
     <div className="Layout">
       <OwlHeader />
       {children}
-      <OwlCard name="Alain"/>
     </div>
   );
 }
