@@ -1,0 +1,24 @@
+.inner{
+    width: 6em;
+    position: relative;
+    top: 50%;
+    margin-top: -9em;
+    left: 50%;
+    margin-left: -25%;
+    color: #fff;
+}
+
+.inner img {
+    width: 100%;
+}
+
+.inner h4 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.inner p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+  

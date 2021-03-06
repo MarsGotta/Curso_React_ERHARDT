@@ -5,9 +5,9 @@ import OwlLogo from '../OwlLogo/OwlLogo'
 function OwlHeader() {
   return (
     <header className="OwlHeader">
-      <OwlIcon name="bar" />
+      <OwlIcon name="bar" position="left"/>
       <OwlLogo />
-      <OwlIcon name="search" />
+      <OwlIcon name="search" position="right"/>
     </header>
   );
 }
