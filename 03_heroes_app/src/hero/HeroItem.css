@@ -1,0 +1,23 @@
+.card-hero{
+    border: 1px solis #ccc;
+    padding: 0.65rem;
+    display: flex;
+flex-wrap: wrap;
+}
+
+.card-hero li{
+    margin:8px;
+    list-style: none;
+}
+
+.card-hero p{
+    margin: 0;
+   
+}
+
+
+
+
+.card-hero img{
+    width: 100%;
+}
