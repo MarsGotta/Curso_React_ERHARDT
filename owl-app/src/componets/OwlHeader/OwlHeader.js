@@ -5,9 +5,8 @@ import OwlLogo from '../OwlLogo/OwlLogo'
 function OwlHeader() {
   return (
     <header>
-      <OwlIcon name="bar" />
-      <OwlLogo />
-      <div id="icono-search"><OwlIcon name="search"/></div>
+      {/* <OwlIcon name="bar" /> */}
+      <h1><OwlLogo /> BuscaGifs</h1>
       
     </header>
   );
