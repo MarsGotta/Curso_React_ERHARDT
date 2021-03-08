@@ -1,4 +1,26 @@
-export const generosList = ['Todos','Autoayuda','Romance', 'Aventura', 'Terror', 'Autoayuda','Romance', 'Aventura', 'Terror']
+export const generosList = [
+    {
+        id: 1,
+        name: 'Todos'
+    },
+    {
+        id: 2,
+        name: 'Autoayuda'
+    },
+    {
+        id: 3,
+        name: 'Romance'
+    },
+    {
+        id: 4,
+        name: 'Fantasía'
+    },
+    {
+        id: 5,
+        name: 'Terror'
+    }
+    
+]
 export const bookList = [
     {
         src: '/libros/libro_1.jpg',
@@ -6,7 +28,7 @@ export const bookList = [
         author: 'Alain Barrero',
         stars: 3,
         liked: false,
-        genero: 'all'
+        generoId: 1
     },
     {
         src: '/libros/libro_2.jpg',
@@ -14,7 +36,7 @@ export const bookList = [
         author: 'Alain Barrero',
         stars: 3,
         liked: false,
-        genero: 'all'
+        generoId: 2
     },
     {
         src: '/libros/libro_3.jpg',
@@ -22,7 +44,7 @@ export const bookList = [
         author: 'Alain Barrero',
         stars: 3,
         liked: false,
-        genero: 'all'
+        generoId: 3
     },
     {
         src: '/libros/libro_4.jpg',
@@ -30,7 +52,7 @@ export const bookList = [
         author: 'Alain Barrero',
         stars: 3,
         liked: false,
-        genero: 'all'
+        generoId: 4
     },
     {
         src: '/libros/libro_1.jpg',
@@ -38,7 +60,7 @@ export const bookList = [
         author: 'Alain Barrero',
         stars: 3,
         liked: false,
-        genero: 'all'
+        generoId: 5
     },
     {
         src: '/libros/libro_2.jpg',
@@ -46,7 +68,7 @@ export const bookList = [
         author: 'Alain Barrero',
         stars: 3,
         liked: false,
-        genero: 'all'
+        generoId: 1
     },
     {
         src: '/libros/libro_3.jpg',
@@ -54,7 +76,7 @@ export const bookList = [
         author: 'Alain Barrero',
         stars: 3,
         liked: false,
-        genero: 'all'
+        generoId: 2
     },
     {
         src: '/libros/libro_4.jpg',
@@ -62,7 +84,7 @@ export const bookList = [
         author: 'Alain Barrero',
         stars: 3,
         liked: false,
-        genero: 'all'
+        generoId: 3
     }    
 ]
 export const lastBookList = [
@@ -72,7 +94,7 @@ export const lastBookList = [
         author: 'Alain Barrero',
         stars: 3,
         liked: false,
-        genero: 'all'
+        generoId: 1
     },
     {
         src: '/libros/libro_3.jpg',
@@ -80,7 +102,7 @@ export const lastBookList = [
         author: 'Alain Barrero',
         stars: 3,
         liked: false,
-        genero: 'all'
+        generoId: 2
     },
     {
         src: '/libros/libro_4.jpg',
@@ -88,6 +110,6 @@ export const lastBookList = [
         author: 'Alain Barrero',
         stars: 3,
         liked: false,
-        genero: 'all'
+        generoId: 3
     }    
 ]
