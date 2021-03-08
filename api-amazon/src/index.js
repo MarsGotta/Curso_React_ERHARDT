@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Layout from './layout/Layout'
+import Home from './pages/Home'
+import { Route } from 'wouter';
 import reportWebVitals from './reportWebVitals';
+import AmazonListaProductos from './componets/AmazonListaProductos/AmazonListaProductos';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Layout>
-      <App />
-    </Layout>
+    <Route
+      path="/"
+      component={Home}
+    />
+    <Route
+      path="/search/:keyword"
+      component={AmazonListaProductos}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );

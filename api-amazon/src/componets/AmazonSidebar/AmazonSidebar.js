@@ -9,7 +9,7 @@ function AmazonSidebar({ generos }) {
   if (generos != undefined) {
     return (
       <div className="sidebar">
-        <List disablePadding dense>
+        <List>
           {
             generos.map(({ id, nombre, ...rest }) => (
               <ListItem key={id} button {...rest}>
@@ -23,7 +23,6 @@ function AmazonSidebar({ generos }) {
   else {
     return (<div></div>)
   }
-
 }
 
 export default AmazonSidebar;

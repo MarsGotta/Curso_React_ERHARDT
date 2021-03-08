@@ -5,21 +5,17 @@
     display: flex;
 }
 
-.headerBar svg {
-    width: 70%;
-}
-
 .barLeft{
     width: 15%;
     height: 100%;
     float: left;
     margin-top: 40px;
-    text-align: left;
     margin-left: 30px;
+    text-align: left;
 }
 
 .barCenter{
-    width: 30%;
+    width: 40%;
     float: left;
     text-align: center;
 }

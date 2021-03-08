@@ -1,6 +1,6 @@
 import './AmazonLogo.css';
 
-function AmazonLogo({ width = 145, height = 100, onClick }) {
+function AmazonLogo({ width = 200, height = 100, onClick }) {
 
   const handleClick = evt => {
     onClick()

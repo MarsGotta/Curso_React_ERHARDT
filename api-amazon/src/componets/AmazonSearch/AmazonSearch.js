@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import './AmazonSearch.css';
+import AmazonIcon from '../AmazonIcon/AmazonIcon'
 
 function AmazonSearch({ onSubmit }) {
     const [keyword, setKeyword] = useState('')
@@ -15,8 +16,10 @@ function AmazonSearch({ onSubmit }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input placeholder="  Busca algo to chulo!" width="48" height="48" onChange={handleInputChange} type='text' value={keyword} />
-            <button>¡Buscar!</button>
+            <input placeholder=" Busca algo chulo!" onChange={handleInputChange} type='text' value={keyword} />
+            <button disabled={keyword != null && keyword != '' ? false : true}>
+                <AmazonIcon name="search" />
+            </button>
         </form>
     )
 }

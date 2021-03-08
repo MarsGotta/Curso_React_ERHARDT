@@ -1,4 +1,3 @@
-
 export const generos = [
     {
         id: 0,
@@ -26,11 +25,10 @@ export const generos = [
     }
 ];
 
-
-export const productList = [
+export const productos = [
     {
         id: 1,
-        name: 'IphoneX',
+        nombre: 'IphoneX',
         image: '',
         price: '20',
         fav: false,
@@ -38,7 +36,7 @@ export const productList = [
     },
     {
         id: 2,
-        name: 'Esterilla',
+        nombre: 'Esterilla',
         image: '',
         price: '10',
         fav: false,
@@ -46,7 +44,7 @@ export const productList = [
     },
     {
         id: 3,
-        name: 'Camiseta',
+        nombre: 'Camiseta',
         image: '',
         price: '8',
         fav: true,

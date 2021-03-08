@@ -1,15 +1,21 @@
 import './AmazonHeader.css';
+import React, { useCallback } from "react"
 import AmazonIcon from '../AmazonIcon/AmazonIcon'
 import AmazonLogo from '../AmazonLogo/AmazonLogo'
 import AmazonSearch from '../AmazonSearch/AmazonSearch';
-import AmazonSidebar from '../AmazonSidebar/AmazonSidebar';
-import { generos } from './mocks.js';
+import { useLocation } from "wouter"
 
 function AmazonHeader() {
 
-  const handleSubmit = evt => {
-    console.log('ha hecho submit: ' + (evt.keyword != null ? evt.keyword : ''));
-  }
+  const [path, pushLocation] = useLocation()
+
+  const handleSubmit = useCallback(({ keyword }) => {
+    console.log('ha hecho submit: ' + (keyword != null ? keyword : ''));
+
+
+    pushLocation(`/search/${keyword}`)
+  }, [pushLocation])
+
 
   const handleClickLogo = evt => {
     console.log('ha hecho click en el logo');
@@ -29,9 +35,6 @@ function AmazonHeader() {
         <div className="barRight">
           <AmazonSearch onSubmit={handleSubmit} />
         </div>
-      </div>   
-      <div>
-        <AmazonSidebar generos={generos} />
       </div>
     </div>
   );
