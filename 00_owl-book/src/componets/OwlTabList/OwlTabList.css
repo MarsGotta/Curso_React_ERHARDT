@@ -1,0 +1,13 @@
+.tab-list,
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.tab-list {
+  padding: 0;
+}
+
+.tab-list li {
+  padding: 0 1.25rem;
+}

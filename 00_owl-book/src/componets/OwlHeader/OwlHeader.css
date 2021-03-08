@@ -1,0 +1,7 @@
+header {
+  display: flex;
+}
+
+header svg path {
+  fill: #fff;
+}
