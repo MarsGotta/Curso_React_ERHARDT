@@ -1,29 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import OwlItem from '../OwlItem/OwlItem'
 import './OwlTabList.css';
 
-function useCustom(element) {
-  const [color, setColor] = useState('azul');
-  setColor(element)
-
-}
-
-function OwlTabList({genreList, bookList}) {
+function OwlTabList({ genreList, bookList }) {
   const [filterList, setFilterList] = useState(bookList);
-  const color = useCustom();
-  console.log(color)
 
   const handleClick = id => {
-    const listFiltered = [...bookList].filter((item) => item.genreId === id && item);
+    const listFiltered = [...bookList].filter((item) => (item.genreId === id || id === 1) && item);
     setFilterList(listFiltered);
   }
   return (
     <>
       <ul>
-        {genreList.map(({id, name}, key) => {
+        {genreList.map(({ id, name }, key) => {
           return <li key={key}>
-              <button onClick={() => handleClick(id)}>{name}</button>
-            </li>
+            <button onClick={() => handleClick(id)}>{name}</button>
+          </li>
         })}
       </ul>
       <div>

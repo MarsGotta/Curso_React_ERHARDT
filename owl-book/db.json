@@ -1,0 +1,66 @@
+{
+    "genres": [
+        {
+            "id": 1,
+            "name": "Todos"
+        },
+        {
+            "id": 2,
+            "name": "Autoayuda"
+        },
+        {
+            "id": 3,
+            "name": "Romance"
+        },
+        {
+            "id": 4,
+            "name": "Fantasía"
+        },
+        {
+            "id": 5,
+            "name": "Terror"
+        }
+    ],
+    "books": [
+        {
+            "src": "#",
+            "title": "Yves Saint Laurent",
+            "author": "Suzy Menkes",
+            "stars": 4,
+            "liked": false,
+            "genreId": 1
+        },
+        {
+            "src": "#",
+            "title": "Yves Saint Laurent",
+            "author": "Suzy Menkes",
+            "stars": 4,
+            "liked": false,
+            "genreId": 2
+        },
+        {
+            "src": "#",
+            "title": "Yves Saint Laurent",
+            "author": "Suzy Menkes",
+            "stars": 4,
+            "liked": false,
+            "genreId": 3
+        },
+        {
+            "src": "#",
+            "title": "Yves Saint Laurent",
+            "author": "Suzy Menkes",
+            "stars": 4,
+            "liked": false,
+            "genreId": 4
+        },
+        {
+            "src": "#",
+            "title": "Yves Saint Laurent",
+            "author": "Suzy Menkes",
+            "stars": 4,
+            "liked": false,
+            "genreId": 5
+        }
+    ]
+}
