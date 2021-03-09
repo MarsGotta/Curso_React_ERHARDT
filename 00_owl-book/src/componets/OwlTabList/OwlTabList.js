@@ -12,13 +12,8 @@ function OwlTabList({ genreList, bookList }) {
   )
 
   const genre = genreList.map((item, key) => {
-    return <li key={key} onClick={}>{item}</li>
+    return <li key={key} onClick={handleTab}>{item}</li>
   })
-
-  
-
-
-
 
   const bookGenre = bookList.filter(element => element === genre)
   const books = bookGenre.map((item, key) => {
