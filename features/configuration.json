@@ -10,6 +10,11 @@
 				"type": "number",
 				"name": "structureId",
 				"default": 0
+			},
+			"vocabularyId": {
+				"type": "number",
+				"name": "vocabularyId",
+				"default": 0
 			}
 		} 
 	}

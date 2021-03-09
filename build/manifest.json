@@ -18,6 +18,16 @@
             "esModule": true
           }
         },
+        "Categoria.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "Categorias.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
         "DetalleLibro.js": {
           "flags": {
             "esModule": true
@@ -29,6 +39,11 @@
           }
         },
         "Libros.js": {
+          "flags": {
+            "esModule": true
+          }
+        },
+        "ListLibros.js": {
           "flags": {
             "esModule": true
           }

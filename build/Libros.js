@@ -1,6 +1,6 @@
 'use strict';
 
-Liferay.Loader.define("my-project@1.0.0/Libros", ['module', 'exports', 'require', 'my-project$react', './Libro', 'my-project$react-router-dom'], function (module, exports, require) {
+Liferay.Loader.define("my-project@1.0.0/Libros", ['module', 'exports', 'require', 'my-project$react', './Libro', 'my-project$react-router-dom', './Categorias', './ListLibros'], function (module, exports, require) {
     var define = undefined;
     var global = window;
     {
@@ -44,6 +44,14 @@ Liferay.Loader.define("my-project@1.0.0/Libros", ['module', 'exports', 'require'
 
         var _reactRouterDom = require("my-project$react-router-dom");
 
+        var _Categorias = require("./Categorias");
+
+        var _Categorias2 = _interopRequireDefault(_Categorias);
+
+        var _ListLibros = require("./ListLibros");
+
+        var _ListLibros2 = _interopRequireDefault(_ListLibros);
+
         function _interopRequireDefault(obj) {
             return obj && obj.__esModule ? obj : { default: obj };
         }
@@ -58,8 +66,38 @@ Liferay.Loader.define("my-project@1.0.0/Libros", ['module', 'exports', 'require'
                 articles = _useState2[0],
                 setArticles = _useState2[1];
 
+            var vocabularyId = configuration.portletInstance.vocabularyId;
+
+            var _useState3 = (0, _react.useState)(undefined),
+                _useState4 = _slicedToArray(_useState3, 2),
+                categories = _useState4[0],
+                setCategories = _useState4[1];
+
+            var _useState5 = (0, _react.useState)({ name: "Todos" }),
+                _useState6 = _slicedToArray(_useState5, 2),
+                selectedCategory = _useState6[0],
+                setSelectedCategory = _useState6[1];
+
             (0, _react.useEffect)(function () {
-                Liferay.Util.fetch('/o/headless-delivery/v1.0/content-structures/' + structureId + '/structured-contents', {
+                Liferay.Util.fetch('/o/headless-admin-taxonomy/v1.0/taxonomy-vocabularies/' + vocabularyId + '/taxonomy-categories/', {
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    method: 'GET'
+                }).then(function (response) {
+                    return response.json();
+                }).then(function (data) {
+                    return setCategories(data);
+                });
+            }, [vocabularyId]);
+
+            (0, _react.useEffect)(function () {
+                var url = '/o/headless-delivery/v1.0/content-structures/' + structureId + '/structured-contents';
+                if (selectedCategory.name != "Todos") {
+                    url = '/o/headless-delivery/v1.0/content-structures/' + structureId + '/structured-contents?search=' + selectedCategory.name;
+                }
+
+                Liferay.Util.fetch(url, {
                     headers: {
                         'Accept': 'application/json'
                     },
@@ -69,14 +107,18 @@ Liferay.Loader.define("my-project@1.0.0/Libros", ['module', 'exports', 'require'
                 }).then(function (data) {
                     return setArticles(data);
                 });
-            }, []);
+            }, [structureId, selectedCategory]);
 
-            if (articles == undefined) {
+            var handleClick = function handleClick(item) {
+                console.log(item);
+                setSelectedCategory(item);
+            };
+
+            console.log(categories);
+            if (articles == undefined || categories == undefined) {
                 return _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/' }, 'Volver a home'), _react2.default.createElement('div', null, 'Cargando'));
             } else {
-                return _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/' }, 'Volver a home'), _react2.default.createElement('ul', null, articles.items.map(function (item) {
-                    return _react2.default.createElement(_Libro2.default, { item: item });
-                })));
+                return _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/' }, 'Volver a home'), _react2.default.createElement(_Categorias2.default, { categories: categories, onClickCategory: handleClick, selectedCategory: selectedCategory }), _react2.default.createElement(_ListLibros2.default, { articles: articles }));
             }
         };
 

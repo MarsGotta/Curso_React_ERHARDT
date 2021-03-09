@@ -44,10 +44,7 @@ Liferay.Loader.define("my-project@1.0.0/DetalleLibro", ['module', 'exports', 're
             return obj && obj.__esModule ? obj : { default: obj };
         }
 
-        var DetalleLibro = function DetalleLibro(_ref) {
-            _ref.configuration;
-
-
+        var DetalleLibro = function DetalleLibro() {
             var _useState = (0, _react.useState)(undefined),
                 _useState2 = _slicedToArray(_useState, 2),
                 article = _useState2[0],
@@ -55,6 +52,8 @@ Liferay.Loader.define("my-project@1.0.0/DetalleLibro", ['module', 'exports', 're
 
             var _useParams = (0, _reactRouterDom.useParams)(),
                 contentId = _useParams.contentId;
+
+            var history = (0, _reactRouterDom.useHistory)();
 
             (0, _react.useEffect)(function () {
                 Liferay.Util.fetch('/o/headless-delivery/v1.0/structured-contents/' + contentId, {
@@ -67,13 +66,14 @@ Liferay.Loader.define("my-project@1.0.0/DetalleLibro", ['module', 'exports', 're
                 }).then(function (data) {
                     return setArticle(data);
                 });
-            }, []);
+            }, [contentId]);
 
             if (article == undefined) {
-                return _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/' }, 'Volver a home'), _react2.default.createElement('div', null, 'Cargando'));
+                return _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement('div', { onClick: function onClick() {
+                        return history.goBack();
+                    } }, 'Volver atr\xE1s'), _react2.default.createElement('div', null, 'Cargando'));
             } else {
                 var libro = {};
-                console.log(article);
                 var _iteratorNormalCompletion = true;
                 var _didIteratorError = false;
                 var _iteratorError = undefined;
@@ -82,7 +82,6 @@ Liferay.Loader.define("my-project@1.0.0/DetalleLibro", ['module', 'exports', 're
                     for (var _iterator = article.contentFields[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                         var contentField = _step.value;
 
-                        console.log(contentField);
                         switch (contentField.label) {
                             case "Titulo":
                                 libro.titulo = contentField.contentFieldValue.data;
@@ -115,7 +114,9 @@ Liferay.Loader.define("my-project@1.0.0/DetalleLibro", ['module', 'exports', 're
                     }
                 }
 
-                return _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/' }, 'Volver a home'), _react2.default.createElement('h2', null, libro.titulo), _react2.default.createElement('img', { src: libro.imagen }), _react2.default.createElement('p', null, libro.autor), article.taxonomyCategoryBriefs.map(function (category) {
+                return _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement('div', { onClick: function onClick() {
+                        return history.goBack();
+                    } }, 'Volver atr\xE1s'), _react2.default.createElement('h2', null, libro.titulo), _react2.default.createElement('img', { src: libro.imagen }), _react2.default.createElement('p', null, libro.autor), article.taxonomyCategoryBriefs.map(function (category) {
                     return _react2.default.createElement('span', null, category.taxonomyCategoryName);
                 }), _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: libro.descripcion } }));
             }

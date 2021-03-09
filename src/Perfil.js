@@ -30,7 +30,7 @@ const Perfil = ({configuration}) => {
     else{
         return (
             <div className="container">
-                <h2>Nombre de perfil: {Liferay.ThemeDisplay.getUserName()}</h2>
+                <h2>{Liferay.ThemeDisplay.getUserName()} Tus libros</h2>
                 {articles.totalCount > 0 ? (
                     <ul>
                         {articles.items.map(item => {

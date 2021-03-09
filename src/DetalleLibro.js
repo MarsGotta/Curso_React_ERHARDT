@@ -1,9 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
+
   
-const DetalleLibro = ({configuration}) => {
+const DetalleLibro = () => {
     const [article, setArticle] = useState(undefined);
     let { contentId } = useParams()
+    const history = useHistory()
 
     useEffect(() => {
         Liferay.Util.fetch(
@@ -16,21 +19,19 @@ const DetalleLibro = ({configuration}) => {
         )
         .then((response) => response.json()) 
         .then((data) =>  setArticle(data));
-    }, []);
+    }, [contentId]);
 
     if(article == undefined){
         return (
             <div className="container">
-                <Link to={'/'}>Volver a home</Link>
+                <div onClick={() =>  history.goBack()}>Volver atrás</div>
                 <div>Cargando</div>
             </div>
         )
     }
     else{
         const libro={};
-        console.log(article);
         for (let contentField of article.contentFields) {
-            console.log(contentField);
             switch (contentField.label) {
                 case "Titulo":
                     libro.titulo=contentField.contentFieldValue.data;
@@ -50,7 +51,7 @@ const DetalleLibro = ({configuration}) => {
         }    
         return (
             <div className="container">
-                <Link to={'/'}>Volver a home</Link>
+                <div onClick={() =>  history.goBack()}>Volver atrás</div>
                 <h2>{libro.titulo}</h2>
                 <img src={libro.imagen} />
                 <p>{libro.autor}</p>

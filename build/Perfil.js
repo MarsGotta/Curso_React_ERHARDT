@@ -74,7 +74,7 @@ Liferay.Loader.define("my-project@1.0.0/Perfil", ['module', 'exports', 'require'
             if (articles == undefined) {
                 return _react2.default.createElement('div', null, _react2.default.createElement('h2', null, 'Nombre de perfil: ', Liferay.ThemeDisplay.getUserName()), _react2.default.createElement(_reactRouterDom.Link, { to: '/libros' }, 'Ir a todos los libros'));
             } else {
-                return _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement('h2', null, 'Nombre de perfil: ', Liferay.ThemeDisplay.getUserName()), articles.totalCount > 0 ? _react2.default.createElement('ul', null, articles.items.map(function (item) {
+                return _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement('h2', null, Liferay.ThemeDisplay.getUserName(), ' Tus libros'), articles.totalCount > 0 ? _react2.default.createElement('ul', null, articles.items.map(function (item) {
                     return _react2.default.createElement(_Libro2.default, { item: item });
                 })) : _react2.default.createElement('p', null, 'No tienes libros'), _react2.default.createElement(_reactRouterDom.Link, { to: '/libros' }, 'Ir a todos los libros'));
             }
