@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import { ThemeContext } from '../../core/theme-context';
 import OwlTabList from '../../componets/OwlTabList/OwlTabList';
 import OwlLiteList from '../../componets/OwlLiteList/OwlLiteList';
 import { useUpdateDocumentTitle, useAPI } from '../../core';
@@ -6,6 +7,7 @@ import { useUpdateDocumentTitle, useAPI } from '../../core';
 import './OwlHomeView.css';
 
 function OwlHomeView() {
+  const contextTheme = useContext(ThemeContext);
   const [list, setList] = useState([]);
   const [genres, setGenres] = useState([]);
 
@@ -30,7 +32,7 @@ function OwlHomeView() {
   )
 
   return (
-    <main className="App">
+    <main className={`home ${contextTheme}`}>
       {renderLoading()}
       {renderMain()}
     </main>

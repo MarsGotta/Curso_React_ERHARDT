@@ -1,0 +1,9 @@
+.owl-header.dark-theme {
+    background-color: var(--dark-bg-primary);
+    color: var(--dark-text-primary);
+}
+
+.owl-header.light-theme {
+    background-color: var(--light-bg-primary);
+    color: var(--light-text-primary);
+}

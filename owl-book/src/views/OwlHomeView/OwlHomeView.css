@@ -1,0 +1,9 @@
+.home.dark-theme {
+    background-color: var(--dark-bg-primary);
+    color: var(--dark-text-primary);
+}
+
+.home.light-theme {
+    background-color: var(--light-bg-primary);
+    color: var(--light-text-primary);
+}
