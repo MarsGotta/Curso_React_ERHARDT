@@ -1,6 +1,6 @@
 'use strict';
 
-Liferay.Loader.define("my-project@1.0.0/Perfil", ['module', 'exports', 'require', 'my-project$react', './Libro', 'my-project$react-router-dom'], function (module, exports, require) {
+Liferay.Loader.define("my-project@1.0.0/Perfil", ['module', 'exports', 'require', 'my-project$react', './Libro', 'my-project$react-router-dom', './index'], function (module, exports, require) {
     var define = undefined;
     var global = window;
     {
@@ -38,26 +38,32 @@ Liferay.Loader.define("my-project@1.0.0/Perfil", ['module', 'exports', 'require'
 
         var _react2 = _interopRequireDefault(_react);
 
-        var _Libro = require("./Libro");
+        var _Libro = require('./Libro');
 
         var _Libro2 = _interopRequireDefault(_Libro);
 
         var _reactRouterDom = require("my-project$react-router-dom");
 
+        var _index = require('./index');
+
         function _interopRequireDefault(obj) {
             return obj && obj.__esModule ? obj : { default: obj };
         }
 
-        var Perfil = function Perfil(_ref) {
-            var configuration = _ref.configuration;
-
-            var structureId = configuration.portletInstance.structureId;
-
+        var Perfil = function Perfil() {
             var _useState = (0, _react.useState)(undefined),
                 _useState2 = _slicedToArray(_useState, 2),
                 articles = _useState2[0],
                 setArticles = _useState2[1];
 
+            var _useState3 = (0, _react.useState)(undefined),
+                _useState4 = _slicedToArray(_useState3, 2),
+                perfil = _useState4[0],
+                setPerfil = _useState4[1];
+
+            var configuration = (0, _react.useContext)(_index.ConfigurationContext);
+            var structureId = configuration.portletInstance.structureId;
+            console.log(configuration);
             (0, _react.useEffect)(function () {
                 Liferay.Util.fetch('/o/headless-delivery/v1.0/content-structures/' + structureId + '/structured-contents?filter=creatorId%20eq%20' + Liferay.ThemeDisplay.getUserId(), {
                     headers: {
@@ -69,12 +75,25 @@ Liferay.Loader.define("my-project@1.0.0/Perfil", ['module', 'exports', 'require'
                 }).then(function (data) {
                     return setArticles(data);
                 });
-            }, []);
+            }, [structureId]);
 
-            if (articles == undefined) {
+            (0, _react.useEffect)(function () {
+                Liferay.Util.fetch('/o/headless-admin-user/v1.0/user-accounts/' + Liferay.ThemeDisplay.getUserId(), {
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    method: 'GET'
+                }).then(function (response) {
+                    return response.json();
+                }).then(function (data) {
+                    return setPerfil(data);
+                });
+            }, [Liferay.ThemeDisplay.getUserId()]);
+
+            if (articles == undefined || perfil == undefined) {
                 return _react2.default.createElement('div', null, _react2.default.createElement('h2', null, 'Nombre de perfil: ', Liferay.ThemeDisplay.getUserName()), _react2.default.createElement(_reactRouterDom.Link, { to: '/libros' }, 'Ir a todos los libros'));
             } else {
-                return _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement('h2', null, Liferay.ThemeDisplay.getUserName(), ' Tus libros'), articles.totalCount > 0 ? _react2.default.createElement('ul', null, articles.items.map(function (item) {
+                return _react2.default.createElement('div', { className: 'container' }, _react2.default.createElement('h2', null, Liferay.ThemeDisplay.getUserName(), ' Tus libros'), _react2.default.createElement('p', null, 'Tu email: ', perfil.emailAddress), articles.totalCount > 0 ? _react2.default.createElement('ul', null, articles.items.map(function (item) {
                     return _react2.default.createElement(_Libro2.default, { item: item });
                 })) : _react2.default.createElement('p', null, 'No tienes libros'), _react2.default.createElement(_reactRouterDom.Link, { to: '/libros' }, 'Ir a todos los libros'));
             }

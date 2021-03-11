@@ -13,10 +13,10 @@ const App = ({configuration}) =>  {
         {signedIn ? 
             (<Router>
                 <Route exact path="/">
-                    <Perfil configuration={configuration} />
+                    <Perfil />
                 </Route>
                 <Route exact path="/libros"> 
-                    <Libros configuration={configuration} />
+                    <Libros />
                 </Route>
                 <Route exact path="/libro/:contentId"> 
                     <DetalleLibro />

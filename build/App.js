@@ -35,11 +35,12 @@ Liferay.Loader.define('my-project@1.0.0/App', ['module', 'exports', 'require', '
         }
 
         var App = function App(_ref) {
-            var configuration = _ref.configuration;
+            _ref.configuration;
+
 
             var signedIn = Liferay.ThemeDisplay.isSignedIn();
             console.log(signedIn);
-            return _react2.default.createElement('div', null, signedIn ? _react2.default.createElement(_reactRouterDom.HashRouter, null, _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/' }, _react2.default.createElement(_Perfil2.default, { configuration: configuration })), _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/libros' }, _react2.default.createElement(_Libros2.default, { configuration: configuration })), _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/libro/:contentId' }, _react2.default.createElement(_DetalleLibro2.default, null))) : _react2.default.createElement('div', null, _react2.default.createElement('p', null, 'Tienes que iniciar sesi\xF3n')));
+            return _react2.default.createElement('div', null, signedIn ? _react2.default.createElement(_reactRouterDom.HashRouter, null, _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/' }, _react2.default.createElement(_Perfil2.default, null)), _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/libros' }, _react2.default.createElement(_Libros2.default, null)), _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/libro/:contentId' }, _react2.default.createElement(_DetalleLibro2.default, null))) : _react2.default.createElement('div', null, _react2.default.createElement('p', null, 'Tienes que iniciar sesi\xF3n')));
         };
         exports.default = App;
         //# sourceMappingURL=App.js.map

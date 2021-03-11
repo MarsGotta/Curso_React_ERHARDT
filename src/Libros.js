@@ -1,14 +1,18 @@
-import React, { useState, useRef, useEffect } from 'react';
-import Libro from "./Libro.js";
+import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Categorias from './Categorias.js';
 import ListLibros from './ListLibros.js';
+import { ConfigurationContext } from './index';
 
-const Libros = ({configuration}) => {
+const Libros = () => {
+    const configuration=useContext(ConfigurationContext);
+
     const structureId = configuration.portletInstance.structureId;
     const [articles, setArticles] = useState(undefined);
+
     const vocabularyId = configuration.portletInstance.vocabularyId;
     const [categories, setCategories] = useState(undefined);
+
     const [selectedCategory, setSelectedCategory] = useState({name: "Todos"});
 
     useEffect(() => {
@@ -45,7 +49,6 @@ const Libros = ({configuration}) => {
     }, [structureId, selectedCategory]);
 
     const handleClick = (item) => {
-        console.log(item);
         setSelectedCategory(item);
     }
 

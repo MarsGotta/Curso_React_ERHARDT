@@ -1,6 +1,6 @@
 'use strict';
 
-Liferay.Loader.define("my-project@1.0.0/Libros", ['module', 'exports', 'require', 'my-project$react', './Libro', 'my-project$react-router-dom', './Categorias', './ListLibros'], function (module, exports, require) {
+Liferay.Loader.define("my-project@1.0.0/Libros", ['module', 'exports', 'require', 'my-project$react', 'my-project$react-router-dom', './Categorias', './ListLibros', './index'], function (module, exports, require) {
     var define = undefined;
     var global = window;
     {
@@ -38,10 +38,6 @@ Liferay.Loader.define("my-project@1.0.0/Libros", ['module', 'exports', 'require'
 
         var _react2 = _interopRequireDefault(_react);
 
-        var _Libro = require("./Libro");
-
-        var _Libro2 = _interopRequireDefault(_Libro);
-
         var _reactRouterDom = require("my-project$react-router-dom");
 
         var _Categorias = require("./Categorias");
@@ -52,12 +48,14 @@ Liferay.Loader.define("my-project@1.0.0/Libros", ['module', 'exports', 'require'
 
         var _ListLibros2 = _interopRequireDefault(_ListLibros);
 
+        var _index = require('./index');
+
         function _interopRequireDefault(obj) {
             return obj && obj.__esModule ? obj : { default: obj };
         }
 
-        var Libros = function Libros(_ref) {
-            var configuration = _ref.configuration;
+        var Libros = function Libros() {
+            var configuration = (0, _react.useContext)(_index.ConfigurationContext);
 
             var structureId = configuration.portletInstance.structureId;
 
@@ -110,7 +108,6 @@ Liferay.Loader.define("my-project@1.0.0/Libros", ['module', 'exports', 'require'
             }, [structureId, selectedCategory]);
 
             var handleClick = function handleClick(item) {
-                console.log(item);
                 setSelectedCategory(item);
             };
 

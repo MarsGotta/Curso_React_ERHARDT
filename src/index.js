@@ -13,11 +13,16 @@ import App from './App';
  * @param  {Object} params a hash with values of interest to the portlet
  * @return {void}
  */
-export default function main({portletNamespace, contextPath, portletElementId, configuration}) {
+ export const ConfigurationContext = React.createContext(undefined);
+ 
+ export default function main({portletNamespace, contextPath, portletElementId, configuration}) {
     
     ReactDOM.render(
-        <App configuration={configuration} />
+        <ConfigurationContext.Provider value={configuration}>
+        <App />
+        </ConfigurationContext.Provider>
         , document.getElementById(portletElementId)
     );
     
 }
+  

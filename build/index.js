@@ -7,6 +7,7 @@ Liferay.Loader.define('my-project@1.0.0/index', ['module', 'exports', 'require',
         Object.defineProperty(exports, "__esModule", {
             value: true
         });
+        exports.ConfigurationContext = undefined;
         exports.default = main;
 
         var _react = require('my-project$react');
@@ -34,13 +35,15 @@ Liferay.Loader.define('my-project@1.0.0/index', ['module', 'exports', 'require',
          * @param  {Object} params a hash with values of interest to the portlet
          * @return {void}
          */
+        var ConfigurationContext = exports.ConfigurationContext = _react2.default.createContext(undefined);
+
         function main(_ref) {
             var portletNamespace = _ref.portletNamespace,
                 contextPath = _ref.contextPath,
                 portletElementId = _ref.portletElementId,
                 configuration = _ref.configuration;
 
-            _reactDom2.default.render(_react2.default.createElement(_App2.default, { configuration: configuration }), document.getElementById(portletElementId));
+            _reactDom2.default.render(_react2.default.createElement(ConfigurationContext.Provider, { value: configuration }, _react2.default.createElement(_App2.default, null)), document.getElementById(portletElementId));
         }
         //# sourceMappingURL=index.js.map
     }
