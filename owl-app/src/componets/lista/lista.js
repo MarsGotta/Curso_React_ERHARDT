@@ -1,21 +1,33 @@
-// function ComponetContainer(){
-//     return <p>hola</p>
-// }
+import { useState } from 'react';
+import GifMini from '../gif/GifMini'
+import './lista.css';
 
-// // ReactDOM.render(ComponetContainer(), document.getElementById('root'))
-// ReactDOM.render(<ComponetContainer/>, document.getElementById('root'))
+function Lista({listaGifs, listaCategorias}){
+    const [filterList, setFilterList] = useState(listaGifs);
 
-function Lista(){
-    const lista = [{name:'pizza', precio: 2}, 
-                    {name:'olivas', precio: 3}, 
-                    {name:'cerveza', precio: 1}]
+    const handleClick = name => {
+        const listFiltered = [...listaGifs].filter((item) => (item.categoria === name) && item);
+        setFilterList(listFiltered);
+      }
+
     return (
-    <div>
-        Soy una lista:
-        <ul>
-            {lista.map((i) => {return <li key={i}>{lista[i].name} :: {lista[i].price} </li>})}
-        </ul>
-    </div>)
+    <>  
+        <div class="row">
+            <ul className="listaCategorias">
+                {listaCategorias.map(({ id, name }, key) => {
+                return <li key={key} className="elementoCategoria">
+                    <a onClick={() => handleClick(name)}>{name}</a>
+                </li>
+                })}
+            </ul>
+        </div>
+        <div class="row listaGifs">
+            {filterList.map((item, key) => {
+            const { name, url, categoria} = item
+            return <GifMini key={key} name={name} url={url} categoria={categoria} />
+            })}
+        </div>
+    </>);
 }
 
 export default Lista;

@@ -3,5 +3,9 @@
     height: 200px;
     border: 3px solid #747570;
     border-radius: 20px;
-    margin: 8px;
+    /* margin: 5px; */
+}
+
+.gifMini {
+    margin: 25px;
 }

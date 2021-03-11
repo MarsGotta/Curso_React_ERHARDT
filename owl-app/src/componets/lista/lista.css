@@ -1,0 +1,30 @@
+.listaCategorias{
+    list-style-type: none;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4e524d;
+}
+
+.elementoCategoria {
+    float: left;
+    color: white;
+}
+
+.elementoCategoria a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  .elementoCategoria a:hover {
+    background-color: #cfc8c8;
+  }
+
+  .listaGifs {
+    margin: 5px;
+}

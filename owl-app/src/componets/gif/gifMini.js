@@ -1,10 +1,11 @@
 import './gif.css';
-import OwlIcon from '../OwlIcon/OwlIcon'
+import Gif from './Gif'
 
 function GifMini(props) {
+  const { name, url, categoria} = props
     return ( 
         <div class="col">
-              <Gif props={this.props}/>
+              <Gif name={name} url={url} categoria={categoria}/>
         </div>
     );
   }
