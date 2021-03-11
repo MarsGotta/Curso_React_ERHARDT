@@ -19,8 +19,8 @@ function OwlNav() {
   return (
     <nav>
       <ul>
-        {elements.map(({ name, url }) => {
-          return <li><Link to={url}>{name}</Link></li>
+        {elements.map(({ name, url }, key) => {
+          return <li key={key}><Link to={url}>{name}</Link></li>
         })}
       </ul>
     </nav>

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux'
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import store from './redux/configureStore'
 import { ThemeContext, themes } from "./core/theme-context"
 import Layout from './layout/Layout'
 import OwlHomeView from './views/OwlHomeView/OwlHomeView';
@@ -24,21 +26,23 @@ function App() {
   }
   return (
     <Router>
-      <ThemeContext.Provider value={theme}>
-        <Layout changeTheme={toggleTheme}>
-          <Switch>
-            <Route path="/" exact>
-              <OwlHomeView />
-            </Route>
-            <Route path="/search">
-              <OwlSearchView />
-            </Route>
-            <Route path="/detail">
-              <OwlDetailView />
-            </Route>
-          </Switch>
-        </Layout>
-      </ThemeContext.Provider>
+      <Provider store={store}>
+        <ThemeContext.Provider value={theme}>
+          <Layout changeTheme={toggleTheme}>
+            <Switch>
+              <Route path="/" exact>
+                <OwlHomeView />
+              </Route>
+              <Route path="/search">
+                <OwlSearchView />
+              </Route>
+              <Route path="/detail">
+                <OwlDetailView />
+              </Route>
+            </Switch>
+          </Layout>
+        </ThemeContext.Provider>
+      </Provider>
     </Router>
   )
 }
