@@ -1,9 +1,10 @@
-import OwlHeader from '../componets/OwlHeader/OwlHeader';
+import OwlHeaderConnected from '../componets/OwlHeader/OwlHeaderConnected';
+import './Layout.css';
 
-function Layout({children}) {
+function Layout({ children, changeTheme, theme = '' }) {
   return (
-    <div className="Layout">
-      <OwlHeader />
+    <div className={`owl-layout ${theme}`}>
+      <OwlHeaderConnected changeTheme={changeTheme} />
       {children}
     </div>
   );

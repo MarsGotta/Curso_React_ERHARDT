@@ -1,34 +1,29 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
+import OwlItem from '../OwlItem/OwlItem'
 import './OwlTabList.css';
-import OwlItem from '../OwlItem/OwlItem';
 
-function OwlTabList({genreList, bookList}) {
-    const [filterList, setFilterList] = useState(bookList);
+function OwlTabList({ genreList, bookList, filterId, filterList, onFilter }) {
+  useEffect(() => {
+    onFilter(filterId, bookList)
+  }, [bookList])
 
-    const handleClick = id => {
-        const list = [...bookList].filter((item) => (item.genreId === id || id === 1) && item);
-        setFilterList(list);
-    }
-
-    return (
-        <>
-            <ul className="tab">
-                {genreList.map(({id, name}, key) => {
-                    return  <li className="tab-link" key={key}>
-                                <button onClick={() => handleClick(id)}>{name}</button>
-                            </li>   
-                })}
-            </ul>
-            <div className="container">
-                <ul>
-                    {filterList.map((item, key) => {
-                        const {src, title, author, stars, liked, genreId} = item
-                        return <OwlItem key={key} src={src} title={title} author={author} stars={stars} liked={liked} genero={genreId}/>
-                    })}
-                </ul>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <ul>
+        {genreList.map(({ id, name }, key) => {
+          return <li key={key}>
+            <button onClick={() => onFilter(id)}>{name}</button>
+          </li>
+        })}
+      </ul>
+      <div>
+        {filterList.map((item, key) => {
+          const { src, title, author, stars, liked, genreId, id } = item
+          return <OwlItem key={key} src={src} title={title} author={author} stars={stars} liked={liked} genre={genreId} id={id} />
+        })}
+      </div>
+    </>
+  );
 }
 
 export default OwlTabList;

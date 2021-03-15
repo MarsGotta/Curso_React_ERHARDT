@@ -1,15 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Provider } from 'react-redux'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import store from './redux/configureStore'
+import { ThemeContext, themes } from "./core/theme-context"
 import Layout from './layout/Layout'
+import OwlHomeView from './views/OwlHomeView/OwlHomeView';
+import OwlSearchView from './views/OwlSearchView/OwlSearchView';
+import OwlDetailView from './views/OwlDetailView/OwlDetailView';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+
+function App() {
+  const [theme, setTheme] = useState(themes.dark)
+  const toggleTheme = () => {
+    if (theme === themes.dark) {
+      setTheme(themes.light)
+    } else {
+      setTheme(themes.dark)
+    }
+  }
+  return (
+    <Router>
+      <Provider store={store}>
+        <ThemeContext.Provider value={theme}>
+          <Layout changeTheme={toggleTheme} theme={theme}>
+            <Switch>
+              <Route path="/" exact>
+                <OwlHomeView />
+              </Route>
+              <Route path="/search/:search">
+                <OwlSearchView />
+              </Route>
+              <Route path="/detail/:id">
+                <OwlDetailView />
+              </Route>
+            </Switch>
+          </Layout>
+        </ThemeContext.Provider>
+      </Provider>
+    </Router>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <Layout>
-      <App />
-    </Layout>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

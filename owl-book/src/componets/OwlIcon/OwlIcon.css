@@ -1,7 +1,13 @@
-.icon-left {
-    float: left;
+.dark-theme .owl-icon[name="bar"] path {
+    stroke: var(--dark-icon-primary)
+}
+.dark-theme .owl-icon[name="search"] path {
+    fill: var(--dark-icon-primary)
 }
 
-.icon-right {
-    float: right;
+.light-theme .owl-icon[name="bar"] path {
+    stroke: var(--light-icon-primary)
+}
+.light-theme .owl-icon[name="search"] path {
+    fill: var(--light-icon-primary)
 }

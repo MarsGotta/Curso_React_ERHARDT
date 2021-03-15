@@ -1,14 +1,21 @@
-import './OwlHeader.css';
-import OwlIcon from '../OwlIcon/OwlIcon'
+import { Link } from "react-router-dom";
 import OwlLogo from '../OwlLogo/OwlLogo'
+import './OwlHeader.css';
 
-function OwlHeader() {
+function OwlHeader({ right, left, bottom, theme }) {
+
+
   return (
-    <header className="OwlHeader">
-      <OwlIcon name="bar" />
-      <OwlLogo />
-      <OwlIcon name="search" />
-    </header>
+    <>
+      <header className={`owl-header`}>
+        {left}
+        <Link to="/">
+          <OwlLogo />
+        </Link>
+        {right}
+      </header>
+      {bottom}
+    </>
   );
 }
 
