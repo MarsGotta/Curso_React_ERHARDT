@@ -5,7 +5,7 @@ import AmazonLogo from '../AmazonLogo/AmazonLogo'
 import AmazonSearch from '../AmazonSearch/AmazonSearch';
 import { useLocation } from "wouter"
 
-function AmazonHeader() {
+function AmazonHeader({ onClickSidebarHeader }) {
 
   const [path, pushLocation] = useLocation()
 
@@ -21,11 +21,15 @@ function AmazonHeader() {
     console.log('ha hecho click en el logo');
   }
 
+  const handleClickSidebar = evt => {
+    onClickSidebarHeader();
+  }
+
   return (
     <div>
       <div className="headerBar">
         <div className="barLeft">
-          <AmazonIcon name="bar" />
+          <AmazonIcon name="bar" onClick={handleClickSidebar} />
         </div>
 
         <div className="barCenter">

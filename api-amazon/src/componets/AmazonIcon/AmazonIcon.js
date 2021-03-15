@@ -1,13 +1,13 @@
 import IconCollection from './IconCollection'
 import './AmazonIcon.css';
 
-function AmazonIcon({ name }) {
+function AmazonIcon({ name, onClick }) {
 
-  const handleClickSidebar = evt => {
-    console.log('ha hecho click en el sidebar');
+  const handleClickSideLeft = evt => {
+    onClick()
   }
 
-  return <IconCollection onClickSidebar={handleClickSidebar} name={name} />
+  return <IconCollection onClickSidebar={handleClickSideLeft} name={name} />
 }
 
 export default AmazonIcon;

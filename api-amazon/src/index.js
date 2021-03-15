@@ -16,6 +16,10 @@ ReactDOM.render(
       path="/search/:keyword"
       component={AmazonListaProductos}
     />
+    <Route
+      path="/gender/:genero"
+      component={AmazonListaProductos}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );

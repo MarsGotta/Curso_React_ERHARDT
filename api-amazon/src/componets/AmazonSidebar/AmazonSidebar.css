@@ -1,4 +1,23 @@
 .sidebar {
-    max-width: 240px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
+  max-width: 240px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.listaProductos{
+  margin-left: 120px;
+}
+
+.MuiPaper-root{
+  margin-top: 104px;
+}
+
+drawer {
+  padding-top : "20px";
+  width: "250px";
+}
+
+item {
+  display: 'flex';
+  padding-top: 0;
+  padding-bottom: 0;
+}

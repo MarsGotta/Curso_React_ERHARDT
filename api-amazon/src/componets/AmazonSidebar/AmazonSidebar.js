@@ -1,23 +1,33 @@
 import './AmazonSidebar.css';
-import React from 'react'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemText from '@material-ui/core/ListItemText'
+import React, { useCallback } from "react"
+import {List, ListItem, ListItemText, Collapse, Button, Drawer } from '@material-ui/core';
+import { useLocation } from "wouter"
+
 
 function AmazonSidebar({ generos }) {
 
+  const [path, pushLocation] = useLocation()
+
+  const handleClickGenero = evt => {
+    pushLocation(`/gender/${evt.currentTarget.innerText.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`)
+  }
+
   if (generos != undefined) {
     return (
-      <div className="sidebar">
+      <Drawer
+          anchor="left"
+          open={true}
+          variant="persistent"
+      >        
         <List>
           {
             generos.map(({ id, nombre, ...rest }) => (
-              <ListItem key={id} button {...rest}>
+              <ListItem onClick={handleClickGenero} key={id} button {...rest}>
                 <ListItemText>{nombre}</ListItemText>
               </ListItem>
             ))}
         </List>
-      </div>
+      </Drawer>
     );
   }
   else {
