@@ -7,7 +7,12 @@ function Lista({listaGifs, listaCategorias}){
 
     const handleClick = name => {
         const listFiltered = [...listaGifs].filter((item) => (item.categoria === name) && item);
-        setFilterList(listFiltered);
+        if(name === "Todos"){
+            setFilterList(listaGifs);
+        }else {
+            setFilterList(listFiltered);
+        }
+        
       }
 
     return (

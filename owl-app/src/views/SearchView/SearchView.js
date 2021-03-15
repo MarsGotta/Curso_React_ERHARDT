@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
-import Lista from '../../componets/lista/Lista';
 import Buscador from '../../componets/buscador/buscador';
 
-import './HomeView.css';
+import './SearchView.css';
 
 function HomeView() {
   const [gifs, setGifs] = useState([]);
@@ -43,10 +42,6 @@ function HomeView() {
 
   const categoriasData = [
     {
-      id: 0,
-      name: 'Todos'
-    },
-    {
       id: 1,
       name: 'Dibujos'
     },
@@ -60,16 +55,18 @@ function HomeView() {
     }
   ]
   
-  useEffect(() => {
-    setGifs(gifsData);
-    setCategorias(categoriasData)
-  }, [])
+  // useEffect(() => {
+  //   setGifs(gifsData);
+  //   setCategorias(categoriasData)
+  // }, [gifsData, categoriasData])
 
   const renderLoading = () => gifsData?.isLoading && <p>Cargando...</p>;
   const renderMain = () => !gifsData?.isLoading && (
     <>
+      <Buscador listaGifs={gifsData} listaCategorias={categoriasData} />
       
-      <Lista listaGifs={gifsData} listaCategorias={categoriasData} />
+      {/* <OwlTabList genreList={genres} bookList={list} />
+      <OwlLiteList bookList={list} /> */}
       
     </>
   )

@@ -1,6 +1,10 @@
 .buscador {
-    margin: auto;
+    margin: 10px;
     width: 30%;
     border: 3px solid #ec6666;
     padding: 10px;
+  }
+
+  .center {
+    margin:0 auto;
   }

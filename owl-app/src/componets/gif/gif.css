@@ -4,8 +4,13 @@
     border: 3px solid #747570;
     border-radius: 20px;
     /* margin: 5px; */
+    
 }
 
 .gifMini {
-    margin: 25px;
+    margin: 20px;
 }
+
+.center {
+    text-align: center;
+  }
