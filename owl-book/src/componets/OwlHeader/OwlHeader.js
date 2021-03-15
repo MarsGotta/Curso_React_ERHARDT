@@ -1,20 +1,20 @@
-import OwlNav from '../OwlNav/OwlNav'
-import OwlIcon from '../OwlIcon/OwlIcon'
+import { Link } from "react-router-dom";
 import OwlLogo from '../OwlLogo/OwlLogo'
 import './OwlHeader.css';
 
-function OwlHeader({ changeTheme, theme }) {
+function OwlHeader({ right, left, bottom, theme }) {
+
+
   return (
     <>
-      <header className={`owl-header ${theme}`}>
-        <OwlIcon name="bar" />
-        <OwlLogo />
-        <OwlIcon name="search" />
-        <button onClick={changeTheme}>
-          Theme
-        </button>
+      <header className={`owl-header`}>
+        {left}
+        <Link to="/">
+          <OwlLogo />
+        </Link>
+        {right}
       </header>
-      <OwlNav />
+      {bottom}
     </>
   );
 }
