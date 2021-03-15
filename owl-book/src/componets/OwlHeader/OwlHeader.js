@@ -3,13 +3,16 @@ import OwlIcon from '../OwlIcon/OwlIcon'
 import OwlLogo from '../OwlLogo/OwlLogo'
 import './OwlHeader.css';
 
-function OwlHeader() {
+function OwlHeader({ changeTheme, theme }) {
   return (
     <>
-      <header>
+      <header className={`owl-header ${theme}`}>
         <OwlIcon name="bar" />
         <OwlLogo />
         <OwlIcon name="search" />
+        <button onClick={changeTheme}>
+          Theme
+        </button>
       </header>
       <OwlNav />
     </>

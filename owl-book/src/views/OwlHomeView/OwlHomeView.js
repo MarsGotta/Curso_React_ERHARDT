@@ -1,4 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { ThemeContext } from '../../core/theme-context';
+import { filterTabList } from '../../redux/actions'
 import OwlTabList from '../../componets/OwlTabList/OwlTabList';
 import OwlLiteList from '../../componets/OwlLiteList/OwlLiteList';
 import { useUpdateDocumentTitle, useAPI } from '../../core';
@@ -6,6 +9,9 @@ import { useUpdateDocumentTitle, useAPI } from '../../core';
 import './OwlHomeView.css';
 
 function OwlHomeView() {
+  const contextTheme = useContext(ThemeContext);
+  const { filterId, filterList } = useSelector(store => store.tabList);
+  const dispatch = useDispatch();
   const [list, setList] = useState([]);
   const [genres, setGenres] = useState([]);
 
@@ -24,13 +30,19 @@ function OwlHomeView() {
   const renderMain = () => !booksData?.isLoading && (
     <>
       <h2>Grandes clásicos para ti</h2>
-      <OwlTabList genreList={genres} bookList={list} />
+      <OwlTabList
+        genreList={genres}
+        bookList={list}
+        filterId={filterId}
+        filterList={filterList}
+        onFilter={(id) => dispatch(filterTabList({ id, list }))}
+      />
       <OwlLiteList bookList={list} />
     </>
   )
 
   return (
-    <main className="App">
+    <main className={`home ${contextTheme}`}>
       {renderLoading()}
       {renderMain()}
     </main>

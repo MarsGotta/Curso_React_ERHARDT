@@ -2,19 +2,18 @@ import { useState, useEffect } from 'react';
 import OwlItem from '../OwlItem/OwlItem'
 import './OwlTabList.css';
 
-function OwlTabList({ genreList, bookList }) {
-  const [filterList, setFilterList] = useState(bookList);
+function OwlTabList({ genreList, bookList, filterId, filterList, onFilter }) {
 
-  const handleClick = id => {
-    const listFiltered = [...bookList].filter((item) => (item.genreId === id || id === 1) && item);
-    setFilterList(listFiltered);
-  }
+  useEffect(() => {
+    onFilter(filterId, bookList)
+  }, [bookList])
+
   return (
     <>
       <ul>
         {genreList.map(({ id, name }, key) => {
           return <li key={key}>
-            <button onClick={() => handleClick(id)}>{name}</button>
+            <button onClick={() => onFilter(id)}>{name}</button>
           </li>
         })}
       </ul>
