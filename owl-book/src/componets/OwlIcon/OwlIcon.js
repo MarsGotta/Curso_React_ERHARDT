@@ -1,8 +1,10 @@
 import * as IconCollection from './icon-collection'
 import './OwlIcon.css';
 
-function OwlIcon({ name, width, height, color, className, stroke }) {
-  return IconCollection[name] ? IconCollection[name]({ width, height, color, className, stroke }) : ''
+function OwlIcon(props) {
+  const { className = '', name } = props;
+  const styleClasses = `owl-icon ${className}`
+  return IconCollection[name] ? IconCollection[name]({ ...props, className: styleClasses }) : ''
 }
 
 export default OwlIcon;

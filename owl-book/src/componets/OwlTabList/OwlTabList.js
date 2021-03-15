@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import OwlItem from '../OwlItem/OwlItem'
 import './OwlTabList.css';
 
 function OwlTabList({ genreList, bookList, filterId, filterList, onFilter }) {
-
   useEffect(() => {
     onFilter(filterId, bookList)
   }, [bookList])
@@ -19,8 +18,8 @@ function OwlTabList({ genreList, bookList, filterId, filterList, onFilter }) {
       </ul>
       <div>
         {filterList.map((item, key) => {
-          const { src, title, author, stars, liked, genreId } = item
-          return <OwlItem key={key} src={src} title={title} author={author} stars={stars} liked={liked} genre={genreId} />
+          const { src, title, author, stars, liked, genreId, id } = item
+          return <OwlItem key={key} src={src} title={title} author={author} stars={stars} liked={liked} genre={genreId} id={id} />
         })}
       </div>
     </>

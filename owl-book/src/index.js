@@ -28,15 +28,15 @@ function App() {
     <Router>
       <Provider store={store}>
         <ThemeContext.Provider value={theme}>
-          <Layout changeTheme={toggleTheme}>
+          <Layout changeTheme={toggleTheme} theme={theme}>
             <Switch>
               <Route path="/" exact>
                 <OwlHomeView />
               </Route>
-              <Route path="/search">
+              <Route path="/search/:search">
                 <OwlSearchView />
               </Route>
-              <Route path="/detail">
+              <Route path="/detail/:id">
                 <OwlDetailView />
               </Route>
             </Switch>

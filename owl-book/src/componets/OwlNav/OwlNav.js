@@ -10,10 +10,6 @@ function OwlNav() {
     {
       name: 'Buscar',
       url: '/search'
-    },
-    {
-      name: 'Detalle',
-      url: '/detail'
     }
   ]
   return (

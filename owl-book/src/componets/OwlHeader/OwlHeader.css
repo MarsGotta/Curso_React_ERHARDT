@@ -1,9 +1,15 @@
-.owl-header.dark-theme {
+.owl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark-theme .owl-header {
     background-color: var(--dark-bg-primary);
     color: var(--dark-text-primary);
 }
 
-.owl-header.light-theme {
+.light-theme .owl-header {
     background-color: var(--light-bg-primary);
     color: var(--light-text-primary);
 }
