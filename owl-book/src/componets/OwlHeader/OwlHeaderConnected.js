@@ -33,7 +33,6 @@ function OwlHeaderConnected({ changeTheme }) {
     const contextTheme = useContext(ThemeContext)
     return (
         <OwlHeader
-            theme={contextTheme}
             left={<OwlIconButton name="bar" onClick={handleShowNav} />}
             right={(
                 <div className="owl-header-button-search-box">
