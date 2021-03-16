@@ -33,7 +33,7 @@ function App() {
               <Route path="/" exact>
                 <OwlHomeView />
               </Route>
-              <Route path="/search/:search">
+              <Route path="/search/:search?">
                 <OwlSearchView />
               </Route>
               <Route path="/detail/:id">
