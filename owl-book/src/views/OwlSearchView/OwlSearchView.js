@@ -33,7 +33,7 @@ function OwlSearchView() {
       {searchList.map((item, key) => {
         const actualSrc = `../${item?.src}`;
         const newItem = { ...item, src: actualSrc };
-        return <OwlItem key={key} {...newItem} />
+        return <OwlItem position="horizontal" key={key} {...newItem} />
       })}
       {searchList.length === 0 && searchInput !== '' && (
         <div>

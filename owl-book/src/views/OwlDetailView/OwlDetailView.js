@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { useUpdateDocumentTitle, useAPI } from '../../core';
 import OwlRating from '../../componets/OwlRating/OwlRating';
-import OwlButton from '../../componets/OwlButton/OwlButton'
+import OwlButton from '../../componets/OwlButton/OwlButton';
+import OwlLikeButton from '../../componets/OwlLikeButton/OwlLikeButton';
 import './OwlDetailView.css';
 
 function OwlDetailView() {
@@ -24,17 +25,20 @@ function OwlDetailView() {
   }
 
   return (
-    <main>
-      <img src={`/${detail?.src}`} />
-      <h1>{detail?.title}</h1>
-      <h2>{detail?.author}</h2>
-      <OwlRating stars={detail?.stars} />
-      <p>{detail?.description}</p>
-      <div>
-        <OwlButton value="Más info" />
-        <OwlButton value="Comentarios" />
+    <main className="owl-detail-view">
+      <img className="owl-detail-img" src={`/${detail?.src}`} />
+      <h1 className="owl-detail-title">{detail?.title}</h1>
+      <h2 className="owl-detail-sub-title">{detail?.author}</h2>
+      <div className="owl-detail-rating-like-box">
+        <OwlRating stars={detail?.stars} />
+        <OwlLikeButton like={detail?.like} />
       </div>
-      <OwlButton value="¿Dónde comprar?" />
+      <p className="owl-detail-description">{detail?.description}</p>
+      <div className="owl-detail-button-box">
+        <OwlButton className="owl-detail-button" value="Más info" />
+        <OwlButton className="owl-detail-button" value="Comentarios" />
+      </div>
+      <OwlButton className="owl-detail-button" value="¿Dónde comprar?" />
     </main>
   );
 }

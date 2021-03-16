@@ -1,0 +1,40 @@
+.dark-theme .owl-tab-button {
+    color: var(--dark-text-primary)
+}
+
+.light-theme .owl-tab-button {
+    color: var(--light-text-primary)
+}
+
+.owl-tab-navigation {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.owl-tab-button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.owl-tab-navigation li.active .owl-tab-button, 
+.owl-tab-navigation .owl-tab-button:focus {
+    color: var(--light-color-primary);
+    border-bottom: 2px solid var(--light-color-primary);
+    outline:none;
+}
+
+.owl-tab-list {
+    display: flex;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.owl-tab-list::-webkit-scrollbar {
+    display: none;
+}
