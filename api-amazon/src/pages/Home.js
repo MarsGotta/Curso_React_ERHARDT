@@ -17,7 +17,7 @@ function Home({ children }) {
   return (
     <div className="Home">
       <AmazonHeader onClickSidebarHeader={handleClickSidebar} />
-      {showSidebar && <AmazonSidebar generos={generos} />}
+      <AmazonSidebar generos={generos} showSidebar={showSidebar} />
       {children}
     </div>
   );

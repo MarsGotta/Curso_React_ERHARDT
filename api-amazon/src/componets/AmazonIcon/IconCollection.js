@@ -1,12 +1,7 @@
-function IconCollection({ name, onClickSidebar }) {
-  const handleClickSidebar = (evt) => {
-    onClickSidebar();
-  };
-
+function IconCollection({ name }) {
   if (name == "bar") {
     return (
       <svg
-        onClick={handleClickSidebar}
         width="34"
         height="24"
         viewBox="0 0 34 24"
@@ -25,8 +20,8 @@ function IconCollection({ name, onClickSidebar }) {
   } else if (name == "search") {
     return (
       <svg
-        width="30"
-        height="30"
+        width="21"
+        height="21"
         viewBox="0 -1 30 30"
         fill="#ffffff"
         xmlns="http://www.w3.org/2000/svg"

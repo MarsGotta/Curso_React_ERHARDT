@@ -1,6 +1,6 @@
 import "./AmazonLogo.css";
 
-function AmazonLogo({ width = 200, height = 100, onClick }) {
+function AmazonLogo({ width = 150, height = 100, onClick }) {
   const handleClick = (evt) => {
     onClick();
   };
@@ -10,7 +10,7 @@ function AmazonLogo({ width = 200, height = 100, onClick }) {
       onClick={handleClick}
       clipRule="evenodd"
       fillRule="evenodd"
-      viewBox="0 -25 400 400"
+      viewBox="0 -25 550 400"
       width={width}
       height={height}
       fill="#ffffff"

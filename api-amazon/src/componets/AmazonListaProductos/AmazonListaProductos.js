@@ -32,7 +32,7 @@ function AmazonListaProductos({ params }) {
         return (
           <>
             <AmazonHeader onClickSidebarHeader={handleClickSidebar} />
-            {showSidebar && <AmazonSidebar generos={generos} />}
+            <AmazonSidebar generos={generos} showSidebar={showSidebar} />
             <div className="listaProductos">
               <ul>
                 {Object.keys(productos).map((key) => {
@@ -46,7 +46,7 @@ function AmazonListaProductos({ params }) {
         return (
           <>
             <AmazonHeader onClickSidebarHeader={handleClickSidebar} />
-            {showSidebar && <AmazonSidebar generos={generos} />}
+            <AmazonSidebar generos={generos} showSidebar={showSidebar} />
             <div className="listaProductos">
               <ul>
                 {Object.keys(productos)
@@ -63,7 +63,7 @@ function AmazonListaProductos({ params }) {
       return (
         <>
           <AmazonHeader onClickSidebarHeader={handleClickSidebar} />
-          {showSidebar && <AmazonSidebar generos={generos} />}
+          <AmazonSidebar generos={generos} showSidebar={showSidebar} />
           <div className="listaProductos">
             <ul>
               {Object.keys(productos)

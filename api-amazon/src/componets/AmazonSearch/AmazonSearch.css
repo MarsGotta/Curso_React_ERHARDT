@@ -19,7 +19,3 @@ form button {
 form button[disabled] {
   background-color: lightgray;
 }
-
-button svg {
-  width: 70%;
-}

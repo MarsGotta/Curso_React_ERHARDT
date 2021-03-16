@@ -6,7 +6,15 @@ function AmazonIcon({ name, onClick }) {
     onClick();
   };
 
-  return <IconCollection onClickSidebar={handleClickSideLeft} name={name} />;
+  if (name == "bar") {
+    return (
+      <button onClick={handleClickSideLeft} className="btnBar">
+        <IconCollection name={name} />
+      </button>
+    );
+  } else {
+    return <IconCollection name={name} />;
+  }
 }
 
 export default AmazonIcon;

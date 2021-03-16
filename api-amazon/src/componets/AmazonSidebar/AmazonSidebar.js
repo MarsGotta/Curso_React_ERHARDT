@@ -3,7 +3,7 @@ import React, { useCallback } from "react";
 import { List, ListItem, ListItemText, Collapse, Button, Drawer } from "@material-ui/core";
 import { useLocation } from "wouter";
 
-function AmazonSidebar({ generos }) {
+function AmazonSidebar({ generos, showSidebar = true }) {
   const [path, pushLocation] = useLocation();
 
   const handleClickGenero = (evt) => {
@@ -17,7 +17,7 @@ function AmazonSidebar({ generos }) {
 
   if (generos != undefined) {
     return (
-      <Drawer anchor="left" open={true} variant="persistent">
+      <Drawer transitionDuration={800} anchor="left" open={showSidebar} variant="persistent">
         <List>
           {generos.map(({ id, nombre, ...rest }) => (
             <ListItem onClick={handleClickGenero} key={id} button {...rest}>

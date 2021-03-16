@@ -13,7 +13,7 @@ function AmazonHeader({ onClickSidebarHeader }) {
     }, [pushLocation]);
 
   const handleClickLogo = (evt) => {
-    console.log("ha hecho click en el logo");
+      pushLocation(`/`);
   };
 
   const handleClickSidebar = (evt) => {
