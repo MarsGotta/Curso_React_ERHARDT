@@ -28,3 +28,7 @@
   .listaGifs {
     margin: 5px;
 }
+
+.center {
+  margin:0 auto;
+}

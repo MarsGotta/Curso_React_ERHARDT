@@ -14,6 +14,7 @@ import { ThemeContext, themes } from "./core/theme-context"
 import Layout from './layout/Layout'
 import HomeView from './views/HomeView/HomeView';
 import SearchView from './views/SearchView/SearchView';
+import DetailView from './views/DetailView/DetailView';
 
 function App() {
   const [theme, setTheme] = useState(themes.dark)
@@ -36,9 +37,9 @@ function App() {
               <Route path="/search">
                 <SearchView />
               </Route>
-              {/* <Route path="/detail">
-                <OwlDetailView />
-              </Route> */}
+              <Route path="/detail/:id">
+                <DetailView />
+              </Route>
             </Switch>
           </Layout>
         </ThemeContext.Provider>

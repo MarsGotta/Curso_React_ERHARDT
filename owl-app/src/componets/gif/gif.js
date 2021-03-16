@@ -5,7 +5,7 @@ function Gif(props) {
   
   return ( 
       <div class="center">
-        <img className="gif" src={props.url} />
+        <img className={props.class} src={props.url} />
         <h5>{props.name}</h5> <p>{props.categoria}</p>
       </div>
   );
