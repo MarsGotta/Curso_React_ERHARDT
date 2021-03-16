@@ -13,10 +13,10 @@ function OwlNav() {
     }
   ]
   return (
-    <nav>
-      <ul>
+    <nav className="owl-nav-box">
+      <ul className="owl-nav-list">
         {elements.map(({ name, url }, key) => {
-          return <li key={key}><Link to={url}>{name}</Link></li>
+          return <li className="owl-nav-item" key={key}><Link to={url}>{name}</Link></li>
         })}
       </ul>
     </nav>

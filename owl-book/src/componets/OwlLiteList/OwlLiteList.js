@@ -3,7 +3,7 @@ import './OwlLiteList.css';
 
 function OwlLiteList({ bookList }) {
   return (
-    <section>
+    <section className="owl-lite-list">
       <h2>Últimos libros</h2>
       <div>
         {bookList.map((item, key) => {

@@ -25,9 +25,9 @@ function OwlSearchView() {
   }
 
   return (
-    <main>
-      <section>
-        <h3>Buscar:</h3>
+    <main className="owl-search-view">
+      <section className="owl-search-view-search-box">
+        <h1>Buscar:</h1>
         <OwlInputSearch value={searchInput} onClick={onSearch} />
       </section>
       {searchList.map((item, key) => {

@@ -13,3 +13,24 @@
     background-color: var(--light-bg-primary);
     color: var(--light-text-primary);
 }
+
+.owl-header-button-search-box {
+    display: flex;
+    align-items: center;
+}
+
+.owl-header-theme-button {
+    color: var(--light-color-primary);
+    background-color: transparent;
+    border: 1px solid var(--light-color-primary);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.owl-header-theme-button:hover {
+    background-color: var(--light-color-primary);
+    color: var(--dark-text-primary);
+}

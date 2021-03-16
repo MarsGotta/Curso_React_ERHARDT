@@ -36,9 +36,9 @@ function OwlHeaderConnected({ changeTheme }) {
             theme={contextTheme}
             left={<OwlIconButton name="bar" onClick={handleShowNav} />}
             right={(
-                <div>
-                    <button onClick={changeTheme}>
-                        Theme
+                <div className="owl-header-button-search-box">
+                    <button className="owl-header-theme-button" onClick={changeTheme}>
+                        {contextTheme === "dark-theme" ? 'Light' : 'Dark'}
                     </button>
                     {showHeaderSearch && <OwlIconButton name="search" onClick={handleSearch} />}
                 </div>
