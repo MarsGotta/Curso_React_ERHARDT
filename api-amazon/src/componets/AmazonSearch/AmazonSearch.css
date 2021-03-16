@@ -1,29 +1,25 @@
-form
-{
-   display: inline-flex;
+form {
+  display: inline-flex;
 }
 
-form input[type="text"] 
-{
-   width: 400px;
-   height: 32px;
-   border: 1px solid #CCC;
-   border-radius: 8px 0px 0px 8px;
+form input[type="text"] {
+  width: 400px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0px 0px 8px;
 }
 
-form button
-{
-   height: 36px;
-   border: 1px solid #CCC;
-   background-color: orange;
-   border-radius: 0px 8px 8px 0px;
+form button {
+  height: 36px;
+  border: 1px solid #ccc;
+  background-color: orange;
+  border-radius: 0px 8px 8px 0px;
 }
 
-form button[disabled]
-{
-   background-color: lightgray;
+form button[disabled] {
+  background-color: lightgray;
 }
 
 button svg {
-    width: 70%;
+  width: 70%;
 }

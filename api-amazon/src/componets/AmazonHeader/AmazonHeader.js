@@ -1,29 +1,24 @@
-import './AmazonHeader.css';
-import React, { useCallback } from "react"
-import AmazonIcon from '../AmazonIcon/AmazonIcon'
-import AmazonLogo from '../AmazonLogo/AmazonLogo'
-import AmazonSearch from '../AmazonSearch/AmazonSearch';
-import { useLocation } from "wouter"
+import "./AmazonHeader.css";
+import React, { useCallback } from "react";
+import AmazonIcon from "../AmazonIcon/AmazonIcon";
+import AmazonLogo from "../AmazonLogo/AmazonLogo";
+import AmazonSearch from "../AmazonSearch/AmazonSearch";
+import { useLocation } from "wouter";
 
 function AmazonHeader({ onClickSidebarHeader }) {
-
-  const [path, pushLocation] = useLocation()
+  const [path, pushLocation] = useLocation();
 
   const handleSubmit = useCallback(({ keyword }) => {
-    console.log('ha hecho submit: ' + (keyword != null ? keyword : ''));
+      pushLocation(`/search/${keyword}`);
+    }, [pushLocation]);
 
+  const handleClickLogo = (evt) => {
+    console.log("ha hecho click en el logo");
+  };
 
-    pushLocation(`/search/${keyword}`)
-  }, [pushLocation])
-
-
-  const handleClickLogo = evt => {
-    console.log('ha hecho click en el logo');
-  }
-
-  const handleClickSidebar = evt => {
+  const handleClickSidebar = (evt) => {
     onClickSidebarHeader();
-  }
+  };
 
   return (
     <div>
