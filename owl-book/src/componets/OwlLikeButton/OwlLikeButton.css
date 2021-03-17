@@ -1,0 +1,16 @@
+.owl-like-icon-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.owl-like-icon-button .liked, .owl-like-icon:hover {
+    stroke: var(--light-color-primary);
+    fill: var(--light-color-primary)
+}
+
+.owl-like-icon, .owl-like-icon-button .liked:hover {
+    stroke: var(--light-color-primary);
+    fill: transparent
+}

@@ -1,8 +1,8 @@
 import './OwlButton.css';
 
-function OwlButton({ value }) {
+function OwlButton({ value, className }) {
   return (
-    <button>{value}</button>
+    <button className={className}>{value}</button>
   );
 }
 

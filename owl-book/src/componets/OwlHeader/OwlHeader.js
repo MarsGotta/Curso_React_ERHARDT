@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import OwlLogo from '../OwlLogo/OwlLogo'
 import './OwlHeader.css';
 
-function OwlHeader({ right, left, bottom, theme }) {
+function OwlHeader({ right, left, bottom }) {
 
 
   return (

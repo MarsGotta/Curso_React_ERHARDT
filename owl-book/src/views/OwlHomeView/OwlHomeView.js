@@ -29,7 +29,7 @@ function OwlHomeView() {
   const renderLoading = () => booksData?.isLoading && <p>Cargando...</p>;
   const renderMain = () => !booksData?.isLoading && (
     <>
-      <h2>Grandes clásicos para ti</h2>
+      <h1>Grandes clásicos para ti</h1>
       <OwlTabList
         genreList={genres}
         bookList={list}
