@@ -1,0 +1,42 @@
+.Items{
+    display: flex;
+    list-style: none;
+}
+
+.Item {
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.Titulete {
+  display: none;
+}
+
+@media only screen and (max-width: 40em) {
+  .Items{
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem 2rem;
+    transition: 0.2s ease-out;
+    transform: translateX(-100%);
+    box-shadow: 1px 0 5px -2px #888;
+  }
+
+  .Item {
+    padding: 1rem 0;
+  }
+
+  .activateBar {
+    transform: translateX(0%)!important;
+  }
+
+  .Titulete {
+    display: block;
+    font-weight: bold;
+  }
+}

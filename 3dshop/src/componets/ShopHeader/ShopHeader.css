@@ -1,0 +1,27 @@
+.shop-header.dark-theme {
+    background-color: var(--dark-bg-primary);
+    color: var(--dark-text-primary);
+}
+
+.shop-header.light-theme {
+    background-color: var(--light-bg-primary);
+    color: var(--light-text-primary);
+}
+
+.wrapper-nav {
+    flex: 1;
+    align-self: flex-start;
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 5px -2px rgba(0,0,0,1);
+    /* 40em == 640px */
+}
+
+@media only screen and (max-width: 40em) {
+    .wrapper-nav {
+        max-height: 75px;
+    }
+}

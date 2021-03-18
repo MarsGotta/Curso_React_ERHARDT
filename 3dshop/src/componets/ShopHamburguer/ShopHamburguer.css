@@ -1,0 +1,46 @@
+.hambur-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: none;
+}
+@media only screen and (max-width: 40em) {
+    .hambur-button {
+        display: flex;
+    }
+}
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: cubic-bezier(0.4, 0, 0.2, 1),
+        cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}

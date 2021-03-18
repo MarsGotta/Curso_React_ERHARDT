@@ -1,0 +1,66 @@
+{
+    "filament": [
+        {
+            "id": 1,
+            "name": "PLA"
+        },
+        {
+            "id": 2,
+            "name": "PET"
+        },
+        {
+            "id": 3,
+            "name": "FLEX"
+        },
+        {
+            "id": 4,
+            "name": "ABS"
+        },
+        {
+            "id": 5,
+            "name": "TPU "
+        }
+    ],
+    "parts": [
+        {
+            "src": "#",
+            "title": "Label Stake with subtext",
+            "author": "Sekellus1",
+            "stars": 4,
+            "liked": false,
+            "filamentId": 1
+        },
+        {
+            "src": "#",
+            "title": "Yves Saint Laurent",
+            "author": "Suzy Menkes",
+            "stars": 4,
+            "liked": false,
+            "filamentId": 2
+        },
+        {
+            "src": "#",
+            "title": "Yves Saint Laurent",
+            "author": "Suzy Menkes",
+            "stars": 4,
+            "liked": false,
+            "filamentId": 3
+        },
+        {
+            "src": "#",
+            "title": "Yves Saint Laurent",
+            "author": "Suzy Menkes",
+            "stars": 4,
+            "liked": false,
+            "filamentId": 4
+        },
+        {
+            "src": "#",
+            "title": "Yves Saint Laurent",
+            "author": "Suzy Menkes",
+            "stars": 4,
+            "liked": false,
+            "filamentId": 5
+        }
+    ]
+}
