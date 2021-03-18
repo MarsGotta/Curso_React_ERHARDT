@@ -15,7 +15,7 @@ function AmazonSearch({ onSubmit }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="formSearch" onSubmit={handleSubmit}>
       <input
         placeholder=" Busca algo chulo!"
         onChange={handleInputChange}
