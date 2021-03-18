@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import GifMini from '../gif/GifMini'
+import GifMini from '../gif/gifMini'
 import './lista.css';
 
 function Lista({listaGifs, listaCategorias}){

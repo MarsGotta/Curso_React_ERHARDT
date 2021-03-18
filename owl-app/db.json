@@ -1,58 +1,405 @@
 {
-    "categorias": [
-        {
-          "id": 0,
-          "name": "Todos"
-        },
-        {
-          "id": 1,
-          "name": "Dibujos"
-        },
-        {
-          "id": 2,
-          "name": "Personajes"
-        },
-        {
-          "id": 3,
-          "name": "Textos"
-        }
-      ],
-    "gifs": [
-        {
-          "id": 1,
-          "name": "Emoji",
-          "url": "https://media0.giphy.com/media/3nbbQlUpGDdgA/giphy.gif?cid=ecf05e47pvw700q91scsriny3ibcflnmjavaw4ojt3k1o00p&rid=giphy.gif",
-          "categoria": "Dibujos"
-        },
-        {
-          "id": 2,
-          "name": "Mano",
-          "url": "https://i.giphy.com/media/X4bXyDUuoueJbDj2dH/giphy.webp",
-          "categoria": "Dibujos"
-        },
-        {
-          "id": 3,
-          "name": "Einstein",
-          "url": "https://media.giphy.com/media/l0HlRA94QhnVZKlpu/giphy.gif",
-          "categoria": "Personajes"
-        },
-        {
-          "id": 4,
-          "name": "Friday",
-          "url": "https://media.giphy.com/media/dUfFmmMSyNMf0zLKS8/giphy.gif",
-          "categoria": "Textos"
-        },
-        {
-          "id": 5,
-          "name": "No",
-          "url": "https://pro2-bar-s3-cdn-cf.myportfolio.com/ea622397181692a15a372eff6286a156/1b4d8973-1d92-490f-85a9-7d25a7080e92_rw_600.gif?h=de560ed58d89faedd256bdd809394b88",
-          "categoria": "Textos"
-        },
-        {
-          "id": 6,
-          "name": "Boom",
-          "url": "https://media.giphy.com/media/dw9DTU8Cu61Sy9FQ7j/giphy.gif",
-          "categoria": "Textos"
-        }
-      ]
+  "categorias": [
+      {
+        "id": 0,
+        "name": "Todos"
+      },
+      {
+        "id": 1,
+        "name": "Dibujos"
+      },
+      {
+        "id": 2,
+        "name": "Personajes"
+      },
+      {
+        "id": 3,
+        "name": "Textos"
+      },
+      {
+        "id": 4,
+        "name": "Gatos"
+      }
+    ],
+  "gifs": [
+      {
+        "id": 1,
+        "name": "Emoji",
+        "url": "https://media0.giphy.com/media/3nbbQlUpGDdgA/giphy.gif?cid=ecf05e47pvw700q91scsriny3ibcflnmjavaw4ojt3k1o00p&rid=giphy.gif",
+        "categoria": "Dibujos"
+      },
+      {
+        "id": 2,
+        "name": "Mano",
+        "url": "https://i.giphy.com/media/X4bXyDUuoueJbDj2dH/giphy.webp",
+        "categoria": "Dibujos"
+      },
+      {
+        "id": 3,
+        "name": "Einstein",
+        "url": "https://media.giphy.com/media/l0HlRA94QhnVZKlpu/giphy.gif",
+        "categoria": "Personajes"
+      },
+      {
+        "id": 4,
+        "name": "Friday",
+        "url": "https://media.giphy.com/media/dUfFmmMSyNMf0zLKS8/giphy.gif",
+        "categoria": "Textos"
+      },
+      {
+        "id": 5,
+        "name": "No",
+        "url": "https://pro2-bar-s3-cdn-cf.myportfolio.com/ea622397181692a15a372eff6286a156/1b4d8973-1d92-490f-85a9-7d25a7080e92_rw_600.gif?h=de560ed58d89faedd256bdd809394b88",
+        "categoria": "Textos"
+      },
+      {
+        "id": 6,
+        "name": "Boom",
+        "url": "https://media.giphy.com/media/dw9DTU8Cu61Sy9FQ7j/giphy.gif",
+        "categoria": "Textos"
+      }
+,
+      {
+        "id": 8,
+"url": "https://media4.giphy.com/media/l4KibK3JwaVo0CjDO/giphy.gif",
+"name": "peace out lol",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 9,
+"url": "https://media3.giphy.com/media/1iu8uG2cjYFZS6wTxv/giphy.gif",
+"name": "Book Club Cat ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 10,
+"url": "https://media3.giphy.com/media/q1MeAPDDMb43K/giphy.gif",
+"name": "laser sword cat ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 11,
+"url": "https://media2.giphy.com/media/yFQ0ywscgobJK/giphy.gif",
+"name": "Oh No Facepalm ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 12,
+"url": "https://media1.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif",
+"name": "cat smoking",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 13,
+"url": "https://media0.giphy.com/media/v6aOjy0Qo1fIA/giphy.gif",
+"name": "bored cat ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 14,
+"url": "https://media4.giphy.com/media/vFKqnCdLPNOKc/giphy.gif",
+"name": "White Cat Hello ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 15,
+"url": "https://media3.giphy.com/media/mlvseq9yvZhba/giphy.gif",
+"name": "bored cat ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 16,
+"url": "https://media0.giphy.com/media/JoDT2WaykzFnN9vJqL/giphy.gif",
+"name": "Cat Fail",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 17,
+"url": "https://media4.giphy.com/media/xUPGcyi4YxcZp8dWZq/giphy.gif",
+"name": "Cat Yoga",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 18,
+"url": "https://media4.giphy.com/media/MCfhrrNN1goH6/giphy.gif",
+"name": "Cat Ear",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 19,
+"url": "https://media0.giphy.com/media/8vQSQ3cNXuDGo/giphy.gif",
+"name": "cat remember ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 20,
+"url": "https://media3.giphy.com/media/lJNoBCvQYp7nq/giphy.gif",
+"name": "cat working ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 21,
+"url": "https://media4.giphy.com/media/12PA1eI8FBqEBa/giphy.gif",
+"name": "cat swimming ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 22,
+"url": "https://media1.giphy.com/media/CqVNwrLt9KEDK/giphy.gif",
+"name": "fat cat ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 23,
+"url": "https://media3.giphy.com/media/1yN6DZ9iVNg5gCZXnq/giphy.gif",
+"name": "Cat Reaction",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 24,
+"url": "https://media0.giphy.com/media/cuPm4p4pClZVC/giphy.gif",
+"name": "Tired Cat ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 25,
+"url": "https://media4.giphy.com/media/jRlP4zbERYW5HoCLvX/giphy.gif",
+"name": "I Love You Cat",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 26,
+"url": "https://media0.giphy.com/media/l6Td5sKDNmDGU/giphy.gif",
+"name": "Cat Reaction ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 27,
+"url": "https://media1.giphy.com/media/nR4L10XlJcSeQ/giphy.gif",
+"name": "Not Safe For Work No ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 28,
+"url": "https://media0.giphy.com/media/SVYrs1hU0SiAf1nw1n/giphy.gif",
+"name": "Cat Wow",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 29,
+"url": "https://media2.giphy.com/media/xJjs8eGVbjNYY/giphy.gif",
+"name": "dance cat",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 30,
+"url": "https://media1.giphy.com/media/3nbxypT20Ulmo/giphy.gif",
+"name": "Coffee Shop Cat ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 31,
+"url": "https://media0.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif",
+"name": "Im Ready Lets Go",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 32,
+"url": "https://media4.giphy.com/media/g99MDPavNBLC8/giphy.gif",
+"name": "cat puppy ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 33,
+"url": "https://media0.giphy.com/media/JRE3AvLsSRXg360F6l/giphy.gif",
+"name": "Beverly Hills Cat",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 34,
+"url": "https://media1.giphy.com/media/jpbnoe3UIa8TU8LM13/giphy.gif",
+"name": "Cat Party ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 35,
+"url": "https://media1.giphy.com/media/13CoXDiaCcCoyk/giphy.gif",
+"name": "funny cat ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 36,
+"url": "https://media1.giphy.com/media/C9x8gX02SnMIoAClXa/giphy.gif",
+"name": "cat swagger ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 37,
+"url": "https://media2.giphy.com/media/12bjQ7uASAaCKk/giphy.gif",
+"name": "cat jumping ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 38,
+"url": "https://media4.giphy.com/media/MWSRkVoNaC30A/giphy.gif",
+"name": "Cat Hello ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 39,
+"url": "https://media0.giphy.com/media/E0cyxhawhe9dm/giphy.gif",
+"name": "cat dragging ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 40,
+"url": "https://media1.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif",
+"name": "Mad The Internet",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 41,
+"url": "https://media2.giphy.com/media/Lq0h93752f6J9tijrh/giphy.gif",
+"name": "cat mouth ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 42,
+"url": "https://media1.giphy.com/media/DPiuat0EsqP3a/giphy.gif",
+"name": "Cat Cuteness ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 43,
+"url": "https://media2.giphy.com/media/Nm8ZPAGOwZUQM/giphy.gif",
+"name": "Oh My God Reaction ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 44,
+"url": "https://media3.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif",
+"name": "In Love Cat ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 45,
+"url": "https://media2.giphy.com/media/5i7umUqAOYYEw/giphy.gif",
+"name": "Cat Omg ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 46,
+"url": "https://media3.giphy.com/media/B7ppUExX92PjW/giphy.gif",
+"name": "Cat Waterfall ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 47,
+"url": "https://media1.giphy.com/media/PqdfIrXEza6fC/giphy.gif",
+"name": "cat pain ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 48,
+"url": "https://media4.giphy.com/media/QObPo575HQHlGMhbae/giphy.gif",
+"name": "Cat Attack ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 49,
+"url": "https://media0.giphy.com/media/RhrAmVUHxjTQvEPBWi/giphy.gif",
+"name": "cat playing ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 50,
+"url": "https://media2.giphy.com/media/q5D43XCcHr8v6/giphy.gif",
+"name": "cat kitty ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 51,
+"url": "https://media1.giphy.com/media/Mhy9hKgfwI0lG/giphy.gif",
+"name": "cat maru ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 52,
+"url": "https://media0.giphy.com/media/qdcFQarRRTEvC/giphy.gif",
+"name": "tired cat ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 53,
+"url": "https://media4.giphy.com/media/G3773sSDJHHy0/giphy.gif",
+"name": "Fat Cat ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 54,
+"url": "https://media0.giphy.com/media/LNF93cQVnbFCM/giphy.gif",
+"name": "cat friendship ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 55,
+"url": "https://media3.giphy.com/media/86oE42LWwKyuA/giphy.gif",
+"name": "cat butt ",
+"categoria": "Gatos"
+      }
+,
+      {
+        "id": 56,
+"url": "https://media3.giphy.com/media/1Yfxps0AHRYBR2tK2G/giphy.gif",
+"name": "rain raining ",
+"categoria": "Gatos"
+      }
+    ]
 }

@@ -4,7 +4,8 @@ import { useUpdateDocumentTitle, useAPI } from '../../core';
 // import OwlRating from '../../componets/OwlRating/OwlRating';
 // import OwlButton from '../../componets/OwlButton/OwlButton'
 import './DetailView.css';
-import Gif from '../../componets/gif/Gif';
+import Gif from '../../componets/gif/gif';
+import LikeButton from '../../componets/LikeButton/LikeButton' 
 
 
 function OwlDetailView() {
@@ -28,7 +29,7 @@ function OwlDetailView() {
   return (
     <main>
       <Gif name={detail?.name} url={detail?.url} categoria={detail?.categoria} class="gif-big"/>
-      
+      <LikeButton />
     </main>
   );
 }

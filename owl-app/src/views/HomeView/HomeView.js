@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Lista from '../../componets/lista/Lista';
+import Lista from '../../componets/lista/lista';
 import { useUpdateDocumentTitle, useAPI } from '../../core';
 
 import './HomeView.css';

@@ -1,0 +1,24 @@
+.owl-like-icon-button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.owl-like-icon-button .liked, .owl-like-icon:hover {
+    stroke: red;
+    fill: red
+}
+
+.owl-like-icon, .owl-like-icon-button .liked:hover {
+    stroke: red;
+    fill: transparent
+}
+
+.btn-primary {
+    background-color: #23aa4e;
+    border-color: #177d37;
+    margin: 10px;
+  }
+  
+
+  

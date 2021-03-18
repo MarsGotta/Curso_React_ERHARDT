@@ -26,7 +26,8 @@
   }
 
   .listaGifs {
-    margin: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .center {

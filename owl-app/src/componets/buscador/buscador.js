@@ -1,7 +1,7 @@
 import './buscador.css';
 import OwlIcon from '../OwlIcon/OwlIcon'
 import { useState } from 'react';
-import GifMini from '../gif/GifMini'
+import GifMini from '../gif/gifMini' 
 
 function Buscador({listaGifs, listaCategorias}) {
   const [filterList, setFilterList] = useState([]);

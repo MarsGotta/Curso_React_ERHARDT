@@ -1,5 +1,5 @@
 import './gif.css';
-import Gif from './Gif'
+import Gif from './gif'
 import { Link } from "react-router-dom";
 
 function GifMini(props) {

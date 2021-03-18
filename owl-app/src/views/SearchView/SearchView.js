@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Buscador from '../../componets/buscador/Buscador';
+import Buscador from '../../componets/buscador/buscador';
 import { useUpdateDocumentTitle, useAPI } from '../../core';
 
 import './SearchView.css';
