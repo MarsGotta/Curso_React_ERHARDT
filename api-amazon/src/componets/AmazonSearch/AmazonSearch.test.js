@@ -23,7 +23,7 @@ describe("AmazonSearch", () => {
     expect(container.firstChild).toHaveClass("formSearch");
   });
 
-  it("existe el objeto svg", () => {
+  it("existe la imagen svg", () => {
     act(() => {
       render(<AmazonSearch />, container);
     });

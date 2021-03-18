@@ -15,12 +15,12 @@ describe("AmazonLogo", () => {
     container = null;
   });
 
-  it("test click del boton", () => {
+  it("test click en el boton", () => {
     const onClickEvt = jest.fn();
     act(() => {
       render(<AmazonLogo onClick={onClickEvt} />, container);
     });
-    
+
     let button = container.firstChild;
 
     act(() => {
@@ -29,5 +29,4 @@ describe("AmazonLogo", () => {
 
     expect(onClickEvt).toHaveBeenCalled();
   });
-
 });
