@@ -1,29 +1,17 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { gql } from 'apollo-boost';
 import { useQuery } from '@apollo/react-hooks';
 import { useUpdateDocumentTitle } from '../../core';
+import { USER_DATA } from "./query";
 import './OwlUserView.css';
 
-const USER_DATA = gql`
-  {
-    viewer {
-      login
-      bio
-      avatarUrl(size: 10)
-      company
-      email
-    }
-  }
-`;
+
 
 function OwlUserView() {
   const [user, setUser] = useState({});
-  const { id } = useParams();
   const { data, error, loading } = useQuery(USER_DATA);
 
   useEffect(() => {
-    console.log(data)
     setUser(data?.viewer);
   }, [data]);
 
@@ -38,9 +26,9 @@ function OwlUserView() {
         <section>
           <h1>{login}</h1>
           <img src={avatarUrl} />
-          <p>{email}</p>
-          <p>{company}</p>
-          <p>{bio}</p>
+          <p id="email">{email}</p>
+          <p id="company">{company}</p>
+          <p id="bio">{bio}</p>
         </section>
       )
     }
