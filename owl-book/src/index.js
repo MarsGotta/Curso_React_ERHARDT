@@ -14,6 +14,7 @@ import OwlHomeView from './views/OwlHomeView/OwlHomeView';
 import OwlSearchView from './views/OwlSearchView/OwlSearchView';
 import OwlDetailView from './views/OwlDetailView/OwlDetailView';
 import OwlUserView from './views/OwlUserView/OwlUserView';
+import OwlContactView from './views/OwlContactView/OwlContactView';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
@@ -44,6 +45,9 @@ function App() {
                 </Route>
                 <Route path="/user/:id?">
                   <OwlUserView />
+                </Route>
+                <Route path="/contact">
+                  <OwlContactView />
                 </Route>
               </Switch>
             </Layout>

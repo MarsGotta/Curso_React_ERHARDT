@@ -14,6 +14,10 @@ function OwlNav() {
     {
       name: 'Usuario',
       url: '/user'
+    },
+    {
+      name: 'Contacto',
+      url: '/contact'
     }
   ]
   return (
